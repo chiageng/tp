@@ -35,7 +35,7 @@ public class Remark {
      * Returns true if a given string is a valid remark.
      */
     public static boolean isValidName(String test) {
-        return test.matches(VALIDATION_REGEX);
+        return true;
     }
 
 
