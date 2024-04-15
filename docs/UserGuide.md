@@ -1089,9 +1089,10 @@ If you encounter a missing field error, please ensure that the fields listed in 
 Example: Adding a new contact with a note and a rating
 
 `/add-person ; name : Pooch ; phone : 98883888 ; address : Pooch Street 32 ; email : impooch@gmail.com ; rating : 3 ; note : Hello my name is Pooch! `
-<div style="page-break-after: always;"></div>
 
 <div markdown="span" class="alert alert-info">:information_source: **Note:** While adding notes is permitted with the `add` command, we highly suggest you to make use of our `note` command if you would like to add a deadline to the note.</div>
+
+<div style="page-break-after: always;"></div>
 
 ## Known issues
 
