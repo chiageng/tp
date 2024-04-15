@@ -71,7 +71,6 @@ public class AddSupplierCommandParserTest {
                 + ADDRESS_DESC_BOB + PRODUCT_DESC_BOB + PRICE_DESC_BOB, new AddSupplierCommand(expectedSupplier));
     }
 
-
     @Test
     public void parse_repeatedNonTagValue_failure() {
         String validExpectedPersonString = NAME_DESC_BOB + PHONE_DESC_BOB + EMAIL_DESC_BOB

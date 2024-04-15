@@ -66,6 +66,7 @@ public class Person {
         return rating;
     }
 
+    //@@author jannaleong
     /**
      * Returns a new instantiation of the current {@code Person} with the updated note,
      * which throws {@code UnsupportedOperationException} if modification is attempted.
@@ -76,7 +77,9 @@ public class Person {
         personToReturn.setPinIfPinned(this);
         return personToReturn;
     }
+    //@@author
 
+    //@@author jamessinmaojun
     /**
      * Returns a new instantiation of the current {@code Person} with the updated rating,
      * which throws {@code UnsupportedOperationException} if modification is attempted.
@@ -87,7 +90,9 @@ public class Person {
         personToReturn.setPinIfPinned(this);
         return personToReturn;
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
      * Returns a new instantiation of the current {@code Person} with the updated pin,
      * which throws {@code UnsupportedOperationException} if modification is attempted.
@@ -98,7 +103,9 @@ public class Person {
         personToReturn.toPin();
         return personToReturn;
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
      * Returns a new instantiation of the current {@code Person} with the updated unpin,
      * which throws {@code UnsupportedOperationException} if modification is attempted.
@@ -109,7 +116,9 @@ public class Person {
         personToReturn.toUnpin();
         return personToReturn;
     }
+    //@@author
 
+    //@@author yleeyilin
     public Pin getPin() {
         return this.pin;
     }
@@ -131,6 +140,7 @@ public class Person {
             this.toPin();
         }
     }
+    //@@author
 
     /**
      * Returns an immutable tag set, which throws {@code UnsupportedOperationException}
@@ -154,9 +164,11 @@ public class Person {
                 && otherPerson.getName().equals(getName());
     }
 
+    //@@author jannaleong
     public void setNoteContent(String content) {
         this.note.setValue(content);
     }
+    //@@author
 
     /**
      * Returns true if both persons have the same identity and data fields.

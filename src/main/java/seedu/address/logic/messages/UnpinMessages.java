@@ -10,7 +10,4 @@ public class UnpinMessages extends Messages {
     public static final String MESSAGE_UNPIN_INVALID_NAME = "Failed to unpin Pooch Contact - %1$s \uD83D\uDC3E";
     public static final String MESSAGE_UNPIN_NAME_NOT_FOUND = FAILED_TO_UNPIN
             + "Name does not exist in your address book \uD83D\uDC3E";
-    public static final String MESSAGE_UNPIN_MISSING_NAME = FAILED_TO_UNPIN
-            + "Unpin requires a name field. %1$s \uD83D\uDC3E";
-
 }

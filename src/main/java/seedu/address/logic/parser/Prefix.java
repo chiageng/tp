@@ -15,11 +15,13 @@ public class Prefix {
         return prefix;
     }
 
+    //@@author Joshy837
     public String getTrimmedPrefix() {
         return prefix
                 .replace("; ", "")
                 .replace(" : ", "");
     }
+    //@@author
 
     @Override
     public String toString() {

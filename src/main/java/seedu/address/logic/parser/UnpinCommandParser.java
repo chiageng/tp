@@ -14,18 +14,19 @@ import seedu.address.logic.messages.UnpinMessages;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.person.Name;
 
+//@@author yleeyilin
 /**
  * Parses input arguments and creates a new UnpinCommand object.
  */
 public class UnpinCommandParser implements Parser<UnpinCommand> {
-    public static final String MESSAGE_NULL_ARGUMENTS = "argument to pass for unpin command is null";
+    public static final String MESSAGE_NULL_ARGUMENTS = "Arguments to pass into unpin command is null.";
     public static final String MESSAGE_COMMENCE_PARSING = "Going to start parsing for unpin command.";
 
     private final Logger logger = LogsCenter.getLogger(getClass());
     /**
      * Parses the given {@code String} of arguments in the context of the UnpinCommand.
      * and returns an UnpinCommand object for execution. Parameter {@code args} cannot be null.
-     * @throws ParseException If the user input does not conform to he expected format.
+     * @throws ParseException If the user input does not conform to the expected format.
      */
     public UnpinCommand parse(String args) throws ParseException {
         requireNonNull(args);

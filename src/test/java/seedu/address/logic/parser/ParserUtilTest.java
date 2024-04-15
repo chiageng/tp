@@ -49,11 +49,11 @@ public class ParserUtilTest {
     private static final String VALID_PRICE = "$20/bag";
     private static final String VALID_SKILL = "train dog";
     private static final String VALID_COMMISSION = "$20/hr";
-    private static final String VALID_TAG_1 = "friend";
-    private static final String VALID_TAG_2 = "neighbour";
+    private static final String VALID_TAG_FRIEND = "friend";
+    private static final String VALID_TAG_NEIGHBOR = "neighbor";
+    private static final String VALID_NOTE = "kind doggos";
     private static final String INVALID_NOTE = "";
     private static final String VALID_DEADLINE = "2019-10-10";
-    private static final String VALID_NOTE = "kind doggos";
     private static final String INVALID_DEADLINE = "2019";
     private static final String VALID_SORT_FIELD = "name";
 
@@ -221,7 +221,7 @@ public class ParserUtilTest {
 
     @Test
     public void parseProduct_null_throwsNullPointerException() {
-        assertThrows(NullPointerException.class, () -> ParserUtil.parseSalary((String) null));
+        assertThrows(NullPointerException.class, () -> ParserUtil.parseProduct((String) null));
     }
 
     @Test
@@ -323,14 +323,14 @@ public class ParserUtilTest {
 
     @Test
     public void parseTag_validValueWithoutWhitespace_returnsTag() throws Exception {
-        Tag expectedTag = new Tag(VALID_TAG_1);
-        assertEquals(expectedTag, ParserUtil.parseTag(VALID_TAG_1));
+        Tag expectedTag = new Tag(VALID_TAG_FRIEND);
+        assertEquals(expectedTag, ParserUtil.parseTag(VALID_TAG_FRIEND));
     }
 
     @Test
     public void parseTag_validValueWithWhitespace_returnsTrimmedTag() throws Exception {
-        String tagWithWhitespace = WHITESPACE + VALID_TAG_1 + WHITESPACE;
-        Tag expectedTag = new Tag(VALID_TAG_1);
+        String tagWithWhitespace = WHITESPACE + VALID_TAG_FRIEND + WHITESPACE;
+        Tag expectedTag = new Tag(VALID_TAG_FRIEND);
         assertEquals(expectedTag, ParserUtil.parseTag(tagWithWhitespace));
     }
 
@@ -341,7 +341,7 @@ public class ParserUtilTest {
 
     @Test
     public void parseTags_collectionWithInvalidTags_throwsParseException() {
-        assertThrows(ParseException.class, () -> ParserUtil.parseTags(Arrays.asList(VALID_TAG_1, INVALID_TAG)));
+        assertThrows(ParseException.class, () -> ParserUtil.parseTags(Arrays.asList(VALID_TAG_FRIEND, INVALID_TAG)));
     }
 
     @Test
@@ -351,12 +351,14 @@ public class ParserUtilTest {
 
     @Test
     public void parseTags_collectionWithValidTags_returnsTagSet() throws Exception {
-        Set<Tag> actualTagSet = ParserUtil.parseTags(Arrays.asList(VALID_TAG_1, VALID_TAG_2));
-        Set<Tag> expectedTagSet = new HashSet<Tag>(Arrays.asList(new Tag(VALID_TAG_1), new Tag(VALID_TAG_2)));
+        Set<Tag> actualTagSet = ParserUtil.parseTags(Arrays.asList(VALID_TAG_FRIEND, VALID_TAG_NEIGHBOR));
+        Set<Tag> expectedTagSet = new HashSet<Tag>(Arrays.asList(new Tag(VALID_TAG_FRIEND),
+                new Tag(VALID_TAG_NEIGHBOR)));
 
         assertEquals(expectedTagSet, actualTagSet);
     }
 
+    //@@author jannaleong
     @Test
     public void parseDeadline_null_throwsNullPointerException() {
         assertThrows(NullPointerException.class, () -> ParserUtil
@@ -379,6 +381,17 @@ public class ParserUtilTest {
     public void parseDeadline_validValueWithoutWhitespace_returnsDeadline() throws Exception {
         DeadlineNote expectedDeadlineNote = new DeadlineNote(VALID_NOTE, VALID_DEADLINE);
         assertEquals(expectedDeadlineNote, ParserUtil.parseDeadlineNote(VALID_NOTE, VALID_DEADLINE));
+    }
+    //@@author
+
+    @Test
+    public void parseRating_null_throwsNullPointerException() {
+        assertThrows(NullPointerException.class, () -> ParserUtil.parseRating((String) null));
+    }
+
+    @Test
+    public void parseRating_invalidValue_throwsParseException() {
+        assertThrows(ParseException.class, () -> ParserUtil.parseRating(INVALID_PRODUCT));
     }
 
     @Test

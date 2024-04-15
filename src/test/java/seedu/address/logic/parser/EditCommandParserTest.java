@@ -47,6 +47,10 @@ import seedu.address.model.person.Phone;
 import seedu.address.testutil.EditPersonDescriptorBuilder;
 import seedu.address.testutil.PersonUtil;
 
+//@@author yleeyilin
+/**
+ * Contains unit tests for {@code EditCommandParser}.
+ */
 public class EditCommandParserTest {
     private final EditCommandParser parser = new EditCommandParser();
 
@@ -88,7 +92,7 @@ public class EditCommandParserTest {
         String userInput = EditCommand.COMMAND_WORD + " " + PREFIX_NAME + "Person1"
             + " " + PREFIX_FIELD + "{" + NAME_DESC_AMY
             + ADDRESS_DESC_AMY + EMAIL_DESC_AMY + " }";
-        String exception = String.format(EditMessages.MESSAGE_EDITING_NAME, EditCommand.MESSAGE_USAGE);
+        String exception = String.format(EditMessages.MESSAGE_MULTIPLE_NAME, EditCommand.MESSAGE_USAGE);
         assertParseFailure(parser, userInput, exception);
 
         // specified invalid field (product)
@@ -273,7 +277,7 @@ public class EditCommandParserTest {
 
         assertParseFailure(parser, userInput, Messages.getErrorMessageForDuplicatePrefixes(PREFIX_PHONE));
 
-        // mulltiple valid fields repeated
+        // multiple valid fields repeated
         userInput = EditCommand.COMMAND_WORD + " " + PREFIX_NAME
                 + CARL.getName() + " " + PREFIX_FIELD + "{"
                 + PHONE_DESC_AMY + ADDRESS_DESC_AMY + EMAIL_DESC_AMY + PHONE_DESC_AMY

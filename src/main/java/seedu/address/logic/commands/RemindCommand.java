@@ -10,13 +10,14 @@ import seedu.address.logic.messages.RemindMessages;
 import seedu.address.model.Model;
 import seedu.address.model.person.RemindPredicate;
 
+//@@author jannaleong
 /**
- * Finds all persons with notes that have deadlines from
+ * Displays all persons with notes that have deadlines from
  * the current day onwards.
  */
 public class RemindCommand extends Command {
     public static final String COMMAND_WORD = "/remind";
-    public static final String LOGGER_EXECUTE_REMIND_MESSAGE = "started executing the remind command";
+    public static final String LOGGER_EXECUTE_REMIND_MESSAGE = "Started executing the remind command.";
 
     private final Logger logger = LogsCenter.getLogger(getClass());
 

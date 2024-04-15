@@ -10,6 +10,4 @@ public class PinMessages extends Messages {
     public static final String MESSAGE_PIN_INVALID_NAME = " %1$s \uD83D\uDC3E";
     public static final String MESSAGE_PIN_NAME_NOT_FOUND = FAILED_TO_PIN
             + "Name does not exist in our address book \uD83D\uDC3E";
-    public static final String MESSAGE_PIN_MISSING_NAME = FAILED_TO_PIN
-            + "Pin requires a name field. %1$s \uD83D\uDC3E";
 }

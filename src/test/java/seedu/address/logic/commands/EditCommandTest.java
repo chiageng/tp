@@ -7,7 +7,10 @@ import static org.junit.jupiter.api.Assertions.fail;
 import static seedu.address.logic.commands.CommandTestUtil.DESC_AMY;
 import static seedu.address.logic.commands.CommandTestUtil.DESC_BOB;
 import static seedu.address.logic.commands.CommandTestUtil.INVALID_NAME;
+import static seedu.address.logic.commands.CommandTestUtil.VALID_NAME_ALICE_PAULINE;
+import static seedu.address.logic.commands.CommandTestUtil.VALID_NAME_BENSON;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_NAME_BOB;
+import static seedu.address.logic.commands.CommandTestUtil.VALID_NAME_GEORGE_BEST;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_PHONE_BOB;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_TAG;
 import static seedu.address.logic.commands.CommandTestUtil.assertCommandFailure;
@@ -31,6 +34,7 @@ import seedu.address.model.person.Person;
 import seedu.address.testutil.EditPersonDescriptorBuilder;
 import seedu.address.testutil.PersonBuilder;
 
+//@@author yleeyilin
 /**
  * Contains integration tests (interaction with the Model) and unit tests for {@code EditCommand}.
  */
@@ -39,23 +43,27 @@ public class EditCommandTest {
 
     @Test
     public void execute_allFieldsSpecifiedUnfilteredList_success() throws CommandException {
-        Person editedPerson = new PersonBuilder().build();
-        EditPersonDescriptor descriptor = new EditPersonDescriptorBuilder(editedPerson).build();
-        EditCommand editCommand = new EditCommand(ALICE.getName(), descriptor);
+        try {
+            Person editedPerson = new PersonBuilder().build();
+            EditPersonDescriptor descriptor = new EditPersonDescriptorBuilder(editedPerson).build();
+            EditCommand editCommand = new EditCommand(ALICE.getName(), descriptor);
 
-        // expected model result
-        Model expectedModel = new ModelManager(new AddressBook(model.getAddressBook()), new UserPrefs());
-        expectedModel.setPerson(model.getFilteredPersonList().get(0), editedPerson);
+            // expected model result
+            Model expectedModel = new ModelManager(new AddressBook(model.getAddressBook()), new UserPrefs());
+            expectedModel.setPerson(model.getFilteredPersonList().get(0), editedPerson);
 
-        // execute method for model
-        editCommand.execute(model);
-        assertEquals(model.getFilteredPersonList(), expectedModel.getFilteredPersonList());
+            // execute method for model
+            editCommand.execute(model);
+            assertEquals(model.getFilteredPersonList(), expectedModel.getFilteredPersonList());
+        } catch (CommandException e) {
+            fail();
+        }
     }
 
     @Test
     public void execute_someFieldsSpecifiedUnfilteredList_success() {
         try {
-            Person lastPerson = model.findPersonByName(new Name("George Best"),
+            Person lastPerson = model.findPersonByName(new Name(VALID_NAME_GEORGE_BEST),
                     EditMessages.MESSAGE_INVALID_EDIT_PERSON);
             PersonBuilder personInList = new PersonBuilder(lastPerson);
             Person editedPerson = personInList.withName(VALID_NAME_BOB).withPhone(VALID_PHONE_BOB)
@@ -82,7 +90,6 @@ public class EditCommandTest {
             EditCommand editCommand = new EditCommand(ALICE.getName(), new EditPersonDescriptor());
             editCommand.execute(model);
             AddressBook addressBookCopy = new VersionedAddressBook(model.getAddressBook());
-
             assertEquals(getTypicalVersionedAddressBook(), addressBookCopy);
         } catch (CommandException e) {
             fail();
@@ -92,7 +99,7 @@ public class EditCommandTest {
     @Test
     public void execute_filteredList_success() {
         try {
-            Person personInFilteredList = model.findPersonByName(new Name("Alice Pauline"),
+            Person personInFilteredList = model.findPersonByName(new Name(VALID_NAME_ALICE_PAULINE),
                     EditMessages.MESSAGE_INVALID_EDIT_PERSON);
             Person editedPerson = new PersonBuilder(personInFilteredList).withName(VALID_NAME_BOB).build();
             EditCommand editCommand = new EditCommand(ALICE.getName(),
@@ -113,9 +120,8 @@ public class EditCommandTest {
     @Test
     public void execute_invalidPersonNameUnfilteredList_failure() {
         Name invalidName = new Name(INVALID_NAME);
-        EditPersonDescriptor descriptor = new EditPersonDescriptorBuilder().withName("Benson").build();
+        EditPersonDescriptor descriptor = new EditPersonDescriptorBuilder().withName(VALID_NAME_BENSON).build();
         EditCommand editCommand = new EditCommand(invalidName, descriptor);
-
         assertCommandFailure(editCommand, model, EditMessages.MESSAGE_INVALID_EDIT_PERSON);
     }
 

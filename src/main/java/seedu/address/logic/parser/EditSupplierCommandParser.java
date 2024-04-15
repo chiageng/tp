@@ -26,11 +26,12 @@ import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.person.Name;
 import seedu.address.model.tag.Tag;
 
+//@@author yleeyilin
 /**
  * Parses input arguments and creates a new EditSupplierCommand object.
  */
 public class EditSupplierCommandParser implements Parser<EditSupplierCommand> {
-    public static final String MESSAGE_NULL_ARGUMENTS = "argument to pass for edit supplier command is null";
+    public static final String MESSAGE_NULL_ARGUMENTS = "Arguments to pass into edit supplier command is null.";
     public static final String MESSAGE_COMMENCE_PARSING = "Going to start parsing for edit supplier command.";
 
     private final Logger logger = LogsCenter.getLogger(getClass());
@@ -59,7 +60,7 @@ public class EditSupplierCommandParser implements Parser<EditSupplierCommand> {
                 PREFIX_NAME, PREFIX_FIELD);
         boolean isNamePrefixDuplicated = argMultimap.hasDuplicateNamePrefix();
         if (isNamePrefixDuplicated) {
-            throw new ParseException(String.format(EditMessages.MESSAGE_EDITING_NAME,
+            throw new ParseException(String.format(EditMessages.MESSAGE_MULTIPLE_NAME,
                     EditSupplierCommand.MESSAGE_USAGE));
         }
 

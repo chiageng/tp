@@ -15,6 +15,10 @@ import org.junit.jupiter.api.Test;
 import seedu.address.logic.commands.EditSupplierCommand.EditSupplierDescriptor;
 import seedu.address.testutil.EditSupplierDescriptorBuilder;
 
+//@@author yleeyilin
+/**
+ * Contains unit tests for {@code EditSupplierDescriptor}.
+ */
 public class EditSupplierDescriptorTest {
     @Test
     public void equals() {

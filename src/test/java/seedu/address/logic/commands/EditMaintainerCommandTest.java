@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 import seedu.address.logic.commands.EditMaintainerCommand.EditMaintainerDescriptor;
 import seedu.address.model.person.Name;
 
+//@@author yleeyilin
 /**
  * Contains integration tests (interaction with the Model) and unit tests for {@code EditMaintainerCommand}.
  */
@@ -26,7 +27,6 @@ public class EditMaintainerCommandTest {
         EditMaintainerDescriptor copyDescriptor = new EditMaintainerDescriptor(DESC_AMY_MAINTAINER);
         EditMaintainerCommand commandWithSameValues =
                 new EditMaintainerCommand(ALICEMAINTAINER.getName(), copyDescriptor);
-
         assertTrue(standardCommand.equals(commandWithSameValues));
 
         // same object -> returns true

@@ -18,6 +18,7 @@ import seedu.address.model.person.Name;
 import seedu.address.model.person.Note;
 import seedu.address.model.person.Person;
 
+//@@author jannaleong
 /**
  * Adds a note to an existing person in PoochPlanner.
  * A non-empty note and name must be specified.
@@ -32,9 +33,9 @@ public class NoteCommand extends Command {
             + "\n"
             + "Example: " + COMMAND_WORD + " " + PREFIX_NAME
             + " Moochie" + " " + PREFIX_NOTE + "Meet at 6pm Tuesday";
-    public static final String MESSAGE_NULL_NAME = "specified note to add to contact is null";
-    public static final String MESSAGE_NULL_NOTE = "specified name to add to contact is null";
-    public static final String LOGGER_EXECUTE_NOTE_MESSAGE = "started executing the note command";
+    public static final String MESSAGE_NULL_NAME = "Specified name to add to contact is null.";
+    public static final String MESSAGE_NULL_NOTE = "Specified note to add to contact is null.";
+    public static final String LOGGER_EXECUTE_NOTE_MESSAGE = "Started executing the note command.";
 
     private final Name name;
     private final Note note;

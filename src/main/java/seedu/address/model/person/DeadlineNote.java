@@ -8,6 +8,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Objects;
 
+//@@author jannaleong
 /**
  * Represents a Person's note with a deadline in the address book.
  */
@@ -17,10 +18,10 @@ public class DeadlineNote extends Note {
     private String deadline;
 
     /**
-     * Constructs an {@code DeadlineNote}.
+     * Constructs a {@code DeadlineNote}.
      *
-     * @param note A valid note.
-     * @param deadline A valid deadline.
+     * @param note A note value.
+     * @param deadline A deadline value.
      */
     public DeadlineNote(String note, String deadline) {
         super(note);

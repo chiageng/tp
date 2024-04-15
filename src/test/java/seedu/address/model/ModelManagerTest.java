@@ -152,6 +152,7 @@ public class ModelManagerTest {
         }
     }
 
+    //@@author yleeyilin
     @Test
     public void findPersonByName_success() {
         AddressBook addressBook = new AddressBookBuilder().withPerson(ALICE).build();
@@ -251,5 +252,5 @@ public class ModelManagerTest {
                 EditMessages.MESSAGE_INVALID_EDIT_SUPPLIER, () -> modelManager
                         .findSupplierByName(nameToFind, EditMessages.MESSAGE_INVALID_EDIT_SUPPLIER));
     }
-
+    //@@author
 }

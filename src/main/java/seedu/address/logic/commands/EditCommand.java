@@ -1,6 +1,7 @@
 package seedu.address.logic.commands;
 
 import static java.util.Objects.requireNonNull;
+import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_ADDRESS;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_EMAIL;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_FIELD;
@@ -30,8 +31,9 @@ import seedu.address.model.person.Phone;
 import seedu.address.model.person.Rating;
 import seedu.address.model.tag.Tag;
 
+//@@author yleeyilin
 /**
- * Edits the details of an existing person in the address book.
+ * Edits the details of an existing person in PoochPlanner.
  */
 public class EditCommand extends Command {
     public static final String COMMAND_WORD = "/edit-person";
@@ -49,25 +51,25 @@ public class EditCommand extends Command {
             + "phone : " + "99820550 "
             + PREFIX_ADDRESS + "NUS College Avenue"
             + " }";
-    private static final Logger logger = LogsCenter.getLogger(EditCommand.class);
+    public static final String MESSAGE_NULL_NAME = "Specified name to edit person is null.";
 
     private final Name name;
     private final EditPersonDescriptor editPersonDescriptor;
+    private final Logger logger = LogsCenter.getLogger(getClass());
 
     /**
-     * @param name of the person in the filtered person list to edit
-     * @param editPersonDescriptor details to edit the person with
+     * @param name Name of the person in the filtered person list to edit.
+     * @param editPersonDescriptor Details to edit the person with.
      */
     public EditCommand(Name name, EditPersonDescriptor editPersonDescriptor) {
-        requireNonNull(name);
-        requireNonNull(editPersonDescriptor);
-
+        requireAllNonNull(name, editPersonDescriptor);
         this.name = name;
         this.editPersonDescriptor = new EditPersonDescriptor(editPersonDescriptor);
     }
 
     @Override
     public CommandResult execute(Model model) throws CommandException {
+        assert (name != null) : MESSAGE_NULL_NAME;
         requireNonNull(model);
 
         Person personToEdit = model.findPersonByName(name, EditMessages.MESSAGE_INVALID_EDIT_PERSON);
@@ -84,8 +86,8 @@ public class EditCommand extends Command {
     }
 
     /**
-     * Creates and returns a {@code Person} with the details of {@code personToEdit}
-     * edited with {@code editPersonDescriptor}.
+     * Creates and returns a {@code Person} with the details of {@code personToEdit}.
+     * Edited with {@code editPersonDescriptor}.
      */
     private static Person createEditedPerson(Person personToEdit, EditPersonDescriptor editPersonDescriptor) {
         assert personToEdit != null;

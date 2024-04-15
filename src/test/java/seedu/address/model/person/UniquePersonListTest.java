@@ -183,6 +183,7 @@ public class UniquePersonListTest {
         assertEquals(expectedUniquePersonList, uniquePersonList);
     }
 
+    //@@author Joshy837
     @Test
     public void sortInternalListByName() {
         uniquePersonList.add(BOB);
@@ -385,23 +386,23 @@ public class UniquePersonListTest {
         assertEquals(expectedUniquePersonList, uniquePersonList);
     }
 
-    //    @Test
-    //    public void sortInternalListByNote() {
-    //        Person personWithLexicographicallyEarlierNote =
-    //                new PersonBuilder(BOB).withNote(VALID_NOTE_AMY).build();
-    //        Person personWithLexicographicallyLaterNote =
-    //                new PersonBuilder(ALICE).withNote(VALID_NOTE_BOB).build();
-    //
-    //        uniquePersonList.add(personWithLexicographicallyEarlierNote);
-    //        uniquePersonList.add(personWithLexicographicallyLaterNote);
-    //        uniquePersonList.sortBy(new Prefix("note"));
-    //
-    //        UniquePersonList expectedUniquePersonList = new UniquePersonList();
-    //        expectedUniquePersonList.add(personWithLexicographicallyLaterNote);
-    //        expectedUniquePersonList.add(personWithLexicographicallyEarlierNote);
-    //
-    //        assertEquals(expectedUniquePersonList, uniquePersonList);
-    //    }
+    @Test
+    public void sortInternalListByNote() {
+        Person personWithLexicographicallyEarlierNote =
+                new PersonBuilder(BOB).withNote("buy food").build();
+        Person personWithLexicographicallyLaterNote =
+                new PersonBuilder(ALICE).withNote("get kibble").build();
+
+        uniquePersonList.add(personWithLexicographicallyLaterNote);
+        uniquePersonList.add(personWithLexicographicallyEarlierNote);
+        uniquePersonList.sortBy(new Prefix("note"));
+
+        UniquePersonList expectedUniquePersonList = new UniquePersonList();
+        expectedUniquePersonList.add(personWithLexicographicallyEarlierNote);
+        expectedUniquePersonList.add(personWithLexicographicallyLaterNote);
+
+        assertEquals(expectedUniquePersonList, uniquePersonList);
+    }
 
     @Test
     public void sortInternalListByRating() {
@@ -438,6 +439,7 @@ public class UniquePersonListTest {
 
         assertEquals(expectedUniquePersonList, uniquePersonList);
     }
+    //@@author
 
     @Test
     public void setPersons_listWithDuplicatePersons_throwsDuplicatePersonException() {

@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import seedu.address.testutil.PersonBuilder;
 
+//@@author jannaleong
 public class RemindPredicateTest {
 
     @Test

@@ -81,17 +81,18 @@ public class ArgumentMultimap {
     }
     //@@author
 
-    //@@author chiageng
+    //@@author yleeyilin
     /**
      * Checks that name prefix is not used more than once.
      * @return True if there is duplicate name prefix.
      */
     public boolean hasDuplicateNamePrefix() {
-        Prefix[] duplicatedPrefixes = Stream.of(PREFIX_NAME).distinct()
+        Prefix[] duplicatedNamePrefixes = Stream.of(PREFIX_NAME).distinct()
                 .filter(prefix -> argMultimap.containsKey(prefix) && argMultimap.get(prefix).size() > 1)
                 .toArray(Prefix[]::new);
 
-        if (duplicatedPrefixes.length > 0) {
+        boolean isNamePrefixDuplicated = duplicatedNamePrefixes.length > 0;
+        if (isNamePrefixDuplicated) {
             return true;
         }
         return false;
@@ -102,6 +103,7 @@ public class ArgumentMultimap {
         return argMultimap.containsKey(prefix);
     }
 
+    //@@author Joshy837
     @Override
     public boolean equals(Object other) {
         if (other == this) {
@@ -116,11 +118,13 @@ public class ArgumentMultimap {
         ArgumentMultimap otherArgumentMultimap = (ArgumentMultimap) other;
         return argMultimap.equals(otherArgumentMultimap.argMultimap);
     }
+    //@@author
 
     public boolean isPreambleEmpty() {
         return this.getPreamble().isEmpty();
     }
 
+    //@@author Joshy837
     /**
      * Gets all the prefixes.
      * @return An array of prefixes in the hashmap.
@@ -128,7 +132,9 @@ public class ArgumentMultimap {
     public Prefix[] getAllPrefixes() {
         return argMultimap.keySet().toArray(new Prefix[0]);
     }
+    //@@author
 
+    //@@author Joshy837
     /**
      * Throws a {@code ParseException} if any of the prefixes given in {@code prefixes} appeared more than
      * once among the arguments.
@@ -146,6 +152,7 @@ public class ArgumentMultimap {
                     emptyPrefixes.toArray(new Prefix[0])));
         }
     }
+    //@@author
 
     /**
      * Returns a string implementation of Argument Multi Map.

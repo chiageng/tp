@@ -14,6 +14,10 @@ import org.junit.jupiter.api.Test;
 import seedu.address.logic.commands.UnpinCommand;
 import seedu.address.model.person.Name;
 
+//@@author yleeyilin
+/**
+ * Contains unit tests for {@code UnpinCommandParser}.
+ */
 public class UnpinCommandParserTest {
     private final UnpinCommandParser parser = new UnpinCommandParser();
 

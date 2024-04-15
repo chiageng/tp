@@ -3,6 +3,7 @@ package seedu.address.model.person;
 import static java.util.Objects.requireNonNull;
 import static seedu.address.commons.util.AppUtil.checkArgument;
 
+//@@author jannaleong
 /**
  * Represents a Person's Note in the address book.
  */
@@ -15,7 +16,7 @@ public class Note {
     /**
      * Constructs a {@code Note}.
      *
-     * @param note A valid note.
+     * @param note A note value.
      */
     public Note(String note) {
         requireNonNull(note);

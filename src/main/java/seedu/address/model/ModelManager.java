@@ -182,6 +182,7 @@ public class ModelManager implements Model {
         filteredPersons.setPredicate(predicate);
         commitAddressBook();
     }
+    //@@author
 
     @Override
     public boolean equals(Object other) {
@@ -200,6 +201,7 @@ public class ModelManager implements Model {
                 && filteredPersons.equals(otherModelManager.filteredPersons);
     }
 
+    //@@author yleeyilin
     /**
      * Update the person list to display pinned contacts first.
      */
@@ -207,6 +209,7 @@ public class ModelManager implements Model {
         addressBook.updatePinnedList();
         commitAddressBook();
     }
+    //@@author
 
     /**
      * Sorts the contact list by a specified parameter.
@@ -216,13 +219,13 @@ public class ModelManager implements Model {
         commitAddressBook();
     }
 
+    //@@author yleeyilin
     /**
-     * Find the person by their name.
      * Find a general contact by their name.
      * @param targetName Refers to the name identifier.
      * @param message Refers to the exception message for the specific command.
-     * @return Person that matches the name.
-     * @throws CommandException Handles invalid person message.
+     * @return Contact that matches the name.
+     * @throws CommandException If no matching contact can be found.
      */
     @Override
     public Person findByName(Name targetName, String message) throws CommandException {
@@ -234,13 +237,15 @@ public class ModelManager implements Model {
         }
         throw new CommandException(message);
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
-     * Find the person by their name.
+     * Find a person by their name.
      * @param targetName Refers to the name identifier.
      * @param message Refers to the exception message for the specific command.
      * @return Person that matches the name.
-     * @throws CommandException Handles invalid person message.
+     * @throws CommandException If no valid person is found.
      */
     @Override
     public Person findPersonByName(Name targetName, String message) throws CommandException {
@@ -255,13 +260,15 @@ public class ModelManager implements Model {
         }
         throw new CommandException(message);
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
-     * Find the maintainer by their name.
+     * Find a maintainer by their name.
      * @param targetName Refers to the name identifier.
      * @param message Refers to the exception message for the specific command.
      * @return Maintainer that matches the name.
-     * @throws CommandException Handles invalid maintainer message.
+     * @throws CommandException If no valid maintainer is found.
      */
     @Override
     public Maintainer findMaintainerByName(Name targetName, String message) throws CommandException {
@@ -273,13 +280,15 @@ public class ModelManager implements Model {
         }
         throw new CommandException(message);
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
-     * Find the staff by their name.
+     * Find a staff by their name.
      * @param targetName Refers to the name identifier.
      * @param message Refers to the exception message for the specific command.
      * @return Staff that matches the name.
-     * @throws CommandException Handles invalid staff message.
+     * @throws CommandException If no valid staff is found.
      */
     @Override
     public Staff findStaffByName(Name targetName, String message) throws CommandException {
@@ -291,13 +300,15 @@ public class ModelManager implements Model {
         }
         throw new CommandException(message);
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
-     * Find the supplier by their name.
+     * Find a supplier by their name.
      * @param targetName Refers to the name identifier.
      * @param message Refers to the exception message for the specific command.
      * @return Supplier that matches the name.
-     * @throws CommandException Handles invalid supplier message.
+     * @throws CommandException If no valid supplier is found.
      */
     @Override
     public Supplier findSupplierByName(Name targetName, String message) throws CommandException {
@@ -309,4 +320,5 @@ public class ModelManager implements Model {
         }
         throw new CommandException(message);
     }
+    //@@author
 }

@@ -16,6 +16,7 @@ import org.junit.jupiter.api.Test;
 import seedu.address.logic.commands.HelpCommand;
 import seedu.address.logic.messages.HelpMessages;
 
+//@@author jannaleong
 public class HelpCommandParserTest {
     private final HelpCommandParser parser = new HelpCommandParser();
     private final String validCommand = "delete";
@@ -59,5 +60,4 @@ public class HelpCommandParserTest {
         assertParseFailure(parser, PREAMBLE_WHITESPACE + commandWithUnknownField,
                 expectedMessage);
     }
-
 }

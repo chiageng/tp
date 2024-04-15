@@ -17,18 +17,19 @@ import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Note;
 
+//@@author jannaleong
 /**
  * Parses input arguments and creates a new NoteCommand object.
  */
 public class NoteCommandParser implements Parser<NoteCommand> {
-    public static final String MESSAGE_NULL_ARGUMENTS = "argument to pass for note command is null";
+    public static final String MESSAGE_NULL_ARGUMENTS = "Argument to pass into note command is null.";
     public static final String MESSAGE_COMMENCE_PARSING = "Going to start parsing for note command.";
     public static final String MESSAGE_PARSE_EXCEPTION = "Parsing error while parsing for note command.";
 
     private final Logger logger = LogsCenter.getLogger(getClass());
 
     /**
-     * Parses the given {@code String} of arguments in the context of the NoteCommand.
+     * Parses the given {@code String} of arguments in the context of the NoteCommand
      * and returns a NoteCommand object for execution. Parameter {@code args} cannot be null.
      *
      * @param args Argument to parse.

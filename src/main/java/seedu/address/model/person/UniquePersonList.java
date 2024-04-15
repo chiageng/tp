@@ -106,14 +106,18 @@ public class UniquePersonList implements Iterable<Person> {
         return internalUnmodifiableList;
     }
 
+    //@@author yleeyilin
     /**
-     * Sorts the list based on the isPinned field.
+     * Sorts the list based on the isPinned field of contacts.
+     * Tie-breaks using the lexographical order of the contact names.
      */
     public void sortByPinnedStatus() {
         internalList.sort(Comparator.comparing(Person::isPinned).reversed()
                 .thenComparing(p -> p.getName().toString()));
     }
+    //@@author
 
+    //@@author Joshy837
     /**
      * Sorts the list based on the specified field.
      *
@@ -316,6 +320,7 @@ public class UniquePersonList implements Iterable<Person> {
     private void sortByFieldRating() {
         internalList.sort(Comparator.comparing((Person p) -> p.getRating().toString()).reversed());
     }
+    //@@author
 
     @Override
     public Iterator<Person> iterator() {

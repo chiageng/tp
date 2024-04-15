@@ -14,6 +14,10 @@ import org.junit.jupiter.api.Test;
 import seedu.address.logic.commands.PinCommand;
 import seedu.address.model.person.Name;
 
+//@@author yleeyilin
+/**
+ * Contains unit tests for {@code PinCommandParser}.
+ */
 public class PinCommandParserTest {
     private final PinCommandParser parser = new PinCommandParser();
 

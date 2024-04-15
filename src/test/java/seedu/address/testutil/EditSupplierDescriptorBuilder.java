@@ -14,7 +14,7 @@ import seedu.address.model.person.Product;
 import seedu.address.model.person.Supplier;
 import seedu.address.model.tag.Tag;
 
-
+//@@author yleeyilin
 /**
  * A utility class to help with building EditSupplierDescriptor objects.
  */

@@ -155,7 +155,7 @@ public class MainWindow extends UiPart<Stage> {
             return;
         }
 
-        // to determine which command user needs help for
+        // to determine which command user needs help for.
         Boolean isHelpGeneralCommand = userFeedback.equals(HelpMessages.MESSAGES_SHOWING_HELP_MESSAGE);
         Boolean isDeleteHelpCommand = userFeedback.equals(HelpMessages.MESSAGES_SHOWING_DELETE_HELP_MESSAGE);
         Boolean isEditHelpCommand = userFeedback.equals(HelpMessages.MESSAGES_SHOWING_EDIT_HELP_MESSAGE);
@@ -173,7 +173,7 @@ public class MainWindow extends UiPart<Stage> {
         Boolean isSortHelpCommand = userFeedback.equals(HelpMessages.MESSAGES_SHOWING_SORT_HELP_MESSAGE);
         Boolean isClearHelpCommand = userFeedback.equals(HelpMessages.MESSAGES_SHOWING_CLEAR_HELP_MESSAGE);
 
-        // set different help messages based on type of command to get help for
+        // set different help messages based on type of command to get help for.
         if (isHelpGeneralCommand) {
             handleHelp();
         } else if (isDeleteHelpCommand) {
@@ -207,10 +207,10 @@ public class MainWindow extends UiPart<Stage> {
         } else if (isClearHelpCommand) {
             handleOtherHelp(HelpMessages.DISPLAYED_CLEAR_MESSAGE);
         } else {
-            // As particular command cannot be identified, display general help message.
+            // As particular command cannot be identified, display general help message
+            // to still provide user with some help.
             handleHelp();
         }
-
     }
 
     /**

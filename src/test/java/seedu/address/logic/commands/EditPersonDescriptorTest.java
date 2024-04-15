@@ -15,6 +15,10 @@ import org.junit.jupiter.api.Test;
 import seedu.address.logic.commands.EditCommand.EditPersonDescriptor;
 import seedu.address.testutil.EditPersonDescriptorBuilder;
 
+//@@author yleeyilin
+/**
+ * Contains unit tests for {@code EditPersonDescriptor}.
+ */
 public class EditPersonDescriptorTest {
     @Test
     public void equals() {

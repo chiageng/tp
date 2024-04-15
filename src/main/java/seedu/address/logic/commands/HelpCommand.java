@@ -10,6 +10,7 @@ import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.logic.messages.HelpMessages;
 import seedu.address.model.Model;
 
+//@@author jannaleong
 /**
  * Returns help details for each command.
  */
@@ -20,8 +21,8 @@ public class HelpCommand extends Command {
     public static final String MESSAGE_CONSTRAINTS = "PoochPlanner only accepts general, add, delete, edit,"
             + " exit, search, list, note, pin, unpin, note, rate, redo, undo, remind, sort and clear as"
             + " valid command type inputs.";
-    public static final String MESSAGE_NULL_COMMAND = "specified command type to give help for is null";
-    public static final String LOGGER_EXECUTE_HELP_MESSAGE = "started executing the help command";
+    public static final String MESSAGE_NULL_COMMAND = "Specified command type to give help for is null.";
+    public static final String LOGGER_EXECUTE_HELP_MESSAGE = "Started executing the help command.";
 
     private final String commandType;
     private final Logger logger = LogsCenter.getLogger(getClass());

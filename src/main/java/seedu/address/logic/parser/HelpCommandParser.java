@@ -12,19 +12,20 @@ import seedu.address.logic.commands.HelpCommand;
 import seedu.address.logic.messages.HelpMessages;
 import seedu.address.logic.parser.exceptions.ParseException;
 
+//@@author jannaleong
 /**
  * Parses input arguments and creates a new HelpCommand object.
  */
 public class HelpCommandParser implements Parser<HelpCommand> {
-    public static final String MESSAGE_NULL_ARGUMENTS = "argument to pass for help command is null";
+    public static final String MESSAGE_NULL_ARGUMENTS = "Argument to pass into help command is null.";
     public static final String MESSAGE_COMMENCE_PARSING = "Going to start parsing for help command.";
     public static final String MESSAGE_PARSE_EXCEPTION = "Parsing error while parsing for help command.";
 
     private final Logger logger = LogsCenter.getLogger(getClass());
 
     /**
-     * Parses the given {@code String} of arguments in the context of the HelpCommand.
-     * and returns a HelpCommand object for execution. Parameter {@code args} cannot be null.
+     * Parses the given {@code String} of arguments in the context of the HelpCommand and
+     * returns a HelpCommand object for execution. Parameter {@code args} cannot be null.
      *
      * @param args Argument to parse.
      * @return HelpCommand object with the parsed command type value.

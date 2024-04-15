@@ -15,6 +15,10 @@ import org.junit.jupiter.api.Test;
 import seedu.address.logic.commands.EditMaintainerCommand.EditMaintainerDescriptor;
 import seedu.address.testutil.EditMaintainerDescriptorBuilder;
 
+//@@author yleeyilin
+/**
+ * Contains unit tests for {@code EditMaintainerDescriptor}.
+ */
 public class EditMaintainerDescriptorTest {
     @Test
     public void equals() {

@@ -1,5 +1,6 @@
 package seedu.address.logic.messages;
 
+//@@author jannaleong
 /**
  * Container for {@code HelpCommand} visible messages.
  */
@@ -52,24 +53,24 @@ public class HelpMessages extends Messages {
     public static final String DISPLAYED_ADD_MESSAGE = "Adds a other/maintainer/supplier/staff person."
             + "\n" + "" + "\n"
             + "Format:" + "\n"
-            + "/add-person ; name : [name] ; phone : [phone] ; address : [address] ; email : [email] ;"
-            + " skill : [skill] ; commission : [commission]" + "\n"
+            + "/add-person ; name : [name] ; phone : [phone] ; address : [address] ; email : [email]"
+            + "\n"
             + "/add-maintainer ; name : [name] ; phone : [phone] ; address : [address] ;"
-            + " email : [email] ; skill : [skill] ; commission : [commission]" + "\n"
+            + " email : [email] ; skill : [skill] ; commission : [commission/hr]" + "\n"
             + "/add-supplier ; name : [name] ; phone : [phone] ; address : [address] ; email : [email] ;"
-            + " product : [product] ; price : [price]" + "\n"
+            + " product : [product] ; price : [price/(quantity)]" + "\n"
             + "/add-staff ; name : [name] ; phone : [phone] ; address : [address] ;"
-            + " email : [email] ; salary : [salary] ; employment : [part-time/full-time]" + "\n"
+            + " email : [email] ; salary : [salary/hr] ; employment : [part-time/full-time]" + "\n"
             + "\n" + ""
             + "Go to our UG for more information : " + USERGUIDE_URL;
 
     public static final String DISPLAYED_EDIT_MESSAGE = "Edit the fields of the specified contact"
             + "\n" + "" + "\n"
             + "Format:" + "\n"
-            + "/edit-person ; name : [name] ; field { [field] : [value] }" + "\n"
-            + "/edit-staff ; name : [name] ; field { [field] : [value] }" + "\n"
-            + "/edit-supplier ; name : [name] ; field { [field] : [value] }" + "\n"
-            + "/edit-maintainer ; name : [name] ; field { [field] : [value] }" + "\n"
+            + "/edit-person ; name : [name] ; field : { [field] : [value] }" + "\n"
+            + "/edit-staff ; name : [name] ; field : { [field] : [value] }" + "\n"
+            + "/edit-supplier ; name : [name] ; field : { [field] : [value] }" + "\n"
+            + "/edit-maintainer ; name : [name] ; field : { [field] : [value] }" + "\n"
             + "\n"
             + "Go to our UG for more information : " + USERGUIDE_URL;
 
@@ -78,7 +79,7 @@ public class HelpMessages extends Messages {
             + " specified fields and keyword."
             + "\n" + "" + "\n"
             + "Format:" + "\n"
-            + "/search ; target-field : [value]" + "\n"
+            + "/search ; [target-field] : [value]" + "\n"
             + "\n"
             + "Go to our UG for more information : " + USERGUIDE_URL;
 
@@ -142,7 +143,7 @@ public class HelpMessages extends Messages {
 
     public static final String DISPLAYED_SORT_MESSAGE = "Sorts contacts based on specified field."
             + "\n" + "" + "\n"
-            + "Format: " + "/sort ; target-field : [target-field]"
+            + "Format: " + "/sort ; [target-field] : [value]"
             + "\n" + "" + "\n"
             + "Go to our UG for more information : " + USERGUIDE_URL;
 

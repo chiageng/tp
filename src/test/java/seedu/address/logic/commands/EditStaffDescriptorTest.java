@@ -15,6 +15,10 @@ import org.junit.jupiter.api.Test;
 import seedu.address.logic.commands.EditStaffCommand.EditStaffDescriptor;
 import seedu.address.testutil.EditStaffDescriptorBuilder;
 
+//@@author yleeyilin
+/**
+ * Contains unit tests for {@code EditStaffDescriptor}.
+ */
 public class EditStaffDescriptorTest {
     @Test
     public void equals() {

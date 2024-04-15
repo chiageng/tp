@@ -24,6 +24,7 @@ import seedu.address.model.person.Person;
 import seedu.address.model.person.Staff;
 import seedu.address.model.person.Supplier;
 
+//@@author jannaleong
 /**
  * Contains integration tests (interaction with the Model) and unit tests for {@code NoteCommand}.
  */

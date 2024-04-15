@@ -42,6 +42,7 @@ public class Maintainer extends Person {
     }
     //@@author
 
+    //@@author jannaleong
     /**
      * Returns a new instantiation of the current {@code Maintainer} with the updated note,
      * which throws {@code UnsupportedOperationException} if modification is attempted.
@@ -53,7 +54,9 @@ public class Maintainer extends Person {
         maintainerToReturn.setPinIfPinned(this);
         return maintainerToReturn;
     }
+    //@@author
 
+    //@@author jamessinmaojun
     /**
      * Returns a new instantiation of the current {@code Maintainer} with the updated rating,
      * which throws {@code UnsupportedOperationException} if modification is attempted.
@@ -65,7 +68,9 @@ public class Maintainer extends Person {
         maintainerToReturn.setPinIfPinned(this);
         return maintainerToReturn;
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
      * Returns a new instantiation of the current {@code Maintainer} with the updated pin,
      * which throws {@code UnsupportedOperationException} if modification is attempted.
@@ -77,7 +82,9 @@ public class Maintainer extends Person {
         maintainerToReturn.toPin();
         return maintainerToReturn;
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
      * Returns a new instantiation of the current {@code Maintainer} with the updated unpin,
      * which throws {@code UnsupportedOperationException} if modification is attempted.
@@ -89,6 +96,7 @@ public class Maintainer extends Person {
         maintainerToReturn.toUnpin();
         return maintainerToReturn;
     }
+    //@@author
 
     //@@author chiageng
     /**

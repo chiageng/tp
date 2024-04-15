@@ -7,6 +7,7 @@ import java.util.function.Predicate;
 
 import seedu.address.commons.util.ToStringBuilder;
 
+//@@author jannaleong
 /**
  * Tests that a {@code Person}'s Note deadline is today or after today.
  */
@@ -20,8 +21,8 @@ public class RemindPredicate implements Predicate<Person> {
         if (!currNote.toString().contains(" by: ")) {
             return false;
         }
-        String[] noteAndDate = currNote.toString().split(" by: ");
 
+        String[] noteAndDate = currNote.toString().split(" by: ");
         try {
             DateTimeFormatter inputFormat = DateTimeFormatter.ofPattern("MMM d yyyy");
             LocalDate convertedDate = LocalDate.parse(noteAndDate[1], inputFormat);
