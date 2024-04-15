@@ -586,8 +586,6 @@ The following activity diagram summarizes what happens when a user executes a ne
 
 [//]: # (@@author jannaleong)
 
-<div style="page-break-after: always;"></div>
-
 ### Help feature
 
 #### Overview
@@ -615,11 +613,11 @@ The following sequence diagram models the interactions between the different com
 
 **Aspect: How to display different help command windows**
 
-* **Alternative 1 (current choice)**: Use only one help window to display help for specific commands. Different contents are displayed by passing in different strings.
+* **Alternative 1 (current choice)**: Use only one help window class to display different help messages for different commands. Different content is displayed by passing in different strings.
   * Pros: Code is made much more concise.
   * Cons: Lengthy if-else statements are required to display the correct string.
 
-* **Alternative 2**: Create a different help window for each type of command.
+* **Alternative 2**: Create a different help window class for each type of command.
   * Pros: All details relating to a single command is within its own file. Can be perceived as neater.
   * Cons: Highly repetitive code. Even small mistakes made would have to be fixed in over ten windows.
 
@@ -638,10 +636,11 @@ The following sequence diagram models the interactions between the different com
 #### Details
 
 1. The user inputs the command to view reminders.
-2. A `LogicManager` object invokes the `execute` method of a `RemindCommand` object.
-3. The `execute` method of the `RemindCommand` object invokes the `updateFilteredPersonList` method of its `Model` argument to update the view of the application to show contacts
+2. A `RemindCommand` object is created.
+3. A `LogicManager` object invokes the `execute` method of the `RemindCommand` object.
+4. The `execute` method of the `RemindCommand` object invokes the `updateFilteredPersonList` method of its `Model` argument to update the view of the application to show contacts
    with note deadlines from today onwards.
-4. The `execute` method of the `RemindCommand` object returns a `CommandResult` object which stores the data regarding the completion of the `remind` command.
+5. The `execute` method of the `RemindCommand` object returns a `CommandResult` object which stores the data regarding the completion of the `remind` command.
 
 #### Example Usage
 
@@ -853,7 +852,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
   * Steps 1n1 - 1n2 are repeated until there are no errors with the input.
   * Use case resumes from step 2.
 
-* [//]: # (@@author)
+[//]: # (@@author)
 
 [//]: # (@@author yleeyilin)
 
@@ -1149,14 +1148,14 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 1b. PoochPlanner detects an invalid name field in the entered input.
   * 1b1. PoochPlanner displays the error message.
-  * 1a2. User re-enters a new command with a specified name field.
+  * 1b2. User re-enters a new command with a specified name field.
   * Steps 1b1 - 1b2 are repeated until the input entered is correct.
   * Use case resumes from step 2.
 
-* 1b. PoochPlanner fails to find the person.
-  * 1b1. PoochPlanner displays the error message.
-  * 1b2. User re-enters a new command with another name.
-  * Steps 1b1 - 1b2 are repeated until the input name matches a contact name that exists in PoochPlanner.
+* 1c. PoochPlanner fails to find the person.
+  * 1c1. PoochPlanner displays the error message.
+  * 1c2. User re-enters a new command with another name.
+  * Steps 1c1 - 1c2 are repeated until the input name matches a contact name that exists in PoochPlanner.
   * Use case resumes from step 2.
 
 <div style="page-break-after: always;"></div>
@@ -1359,14 +1358,14 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **MSS**:
 
-1.  User requests to learn more about the commands.
+1.  User requests to get help about a command.
 2.  PoochPlanner displays help details relating to this command.
 
     Use case ends.
 
 **Extensions**:
 
-* 1a. User requests to learn about an invalid command (a command that is not offered by PoochPlanner).
+* 1a. User requests help for an invalid command (a command that is not offered by PoochPlanner).
   * 1a1. PoochPlanner displays the error message.
   * 1a2. User re-enters a new command and request to learn about a new command.
   * Steps 1a1 - 1a2 are repeated until a valid command is entered by the user.
@@ -1388,8 +1387,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 2.  PoochPlanner displays all relevant contacts.
 
     Use case ends.
-
-<div style="page-break-after: always;"></div>
 
 [//]: # (@@author)
 
@@ -1768,7 +1765,7 @@ testers are expected to do more *exploratory* testing.
    1. Prerequisites: The contact to add a note to must already exist. This contact can be of `Person`/`Supplier`/`Staff`/`Maintainer` type. You can run the following command to add a contact:<br>
       `/add-person ; name : Poochie ; phone : 98883888 ; address : Pooch Street 32 ; email : impoochie@gmail.com`
         
-   2. Test case: `/note ; name : Poochie ; note : get kibble`<br>
+   2. Test case:<br>`/note ; name : Poochie ; note : get kibble`<br>
       Expected: Adds a note to a contact named **_Poochie_**.
 
 2. Adding a note (with deadline) to a contact
@@ -1845,8 +1842,8 @@ testers are expected to do more *exploratory* testing.
 
 1. Viewing help
 
-1. Test case: /help ; command : delete<br>
-   Expected: Displays help details for the delete command.
+   1. Test case: `/help ; command : delete`<br>
+      Expected: Displays help details for the delete command.
 
 <div style="page-break-after: always;"></div>
 
