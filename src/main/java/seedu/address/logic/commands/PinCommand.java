@@ -13,6 +13,7 @@ import seedu.address.model.Model;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Person;
 
+//@@author yleeyilin
 /**
  * Pins a contact in PoochPlanner.
  */
@@ -24,8 +25,8 @@ public class PinCommand extends Command {
             + "\n"
             + "Example: " + COMMAND_WORD + " "
             + PREFIX_NAME + "John Doe other ";
-    public static final String MESSAGE_NULL_NAME = "specified name to pin contact is null";
-    public static final String LOGGER_EXECUTE_PIN_MESSAGE = "started executing the pin command";
+    public static final String MESSAGE_NULL_NAME = "Specified name to pin contact is null.";
+    public static final String LOGGER_EXECUTE_PIN_MESSAGE = "Started executing the pin command.";
 
     private final Name name;
     private final Logger logger = LogsCenter.getLogger(getClass());

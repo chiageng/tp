@@ -1,5 +1,6 @@
 package seedu.address.model.person;
 
+//@@author jamessinmaojun
 /**
  * Represents a Person's Rating in the address book.
  * Guarantees: immutable; is valid as declared in {@link #isValidRating(String)}

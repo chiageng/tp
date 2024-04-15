@@ -95,9 +95,14 @@ public class AddressBook implements ReadOnlyAddressBook {
         persons.remove(key);
     }
 
+    //@@author yleeyilin
+    /**
+     * Sorts the contacts list so that pinned contacts will appear at the top of the list.
+     */
     public void updatePinnedList() {
         persons.sortByPinnedStatus();
     }
+    //@@author
 
     public void updateSortedList(Prefix prefix) {
         persons.sortBy(prefix);

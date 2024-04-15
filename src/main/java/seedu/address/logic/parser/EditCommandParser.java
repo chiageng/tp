@@ -24,11 +24,12 @@ import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.person.Name;
 import seedu.address.model.tag.Tag;
 
+//@@author yleeyilin
 /**
  * Parses input arguments and creates a new EditCommand object.
  */
 public class EditCommandParser implements Parser<EditCommand> {
-    public static final String MESSAGE_NULL_ARGUMENTS = "argument to pass for edit command is null";
+    public static final String MESSAGE_NULL_ARGUMENTS = "Arguments to pass into edit command is null.";
     public static final String MESSAGE_COMMENCE_PARSING = "Going to start parsing for edit command.";
 
     private final Logger logger = LogsCenter.getLogger(getClass());

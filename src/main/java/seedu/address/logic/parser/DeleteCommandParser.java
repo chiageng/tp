@@ -16,6 +16,7 @@ import seedu.address.logic.messages.DeleteMessages;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.person.Name;
 
+//@@author jamessinmaojun
 /**
  * Parses input arguments and creates a new DeleteCommand object.
  */

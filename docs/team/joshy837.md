@@ -37,3 +37,4 @@ Given below are my contributions to the project.
       * Added Sequence Diagram for the `search` command [\#205](https://github.com/AY2324S2-CS2103T-W10-2/tp/pull/205)
       * Added Sequence Diagram for the `sort` command [\#205](https://github.com/AY2324S2-CS2103T-W10-2/tp/pull/205)
       * Edited the UML Diagram for `Model` [\#80](https://github.com/AY2324S2-CS2103T-W10-2/tp/pull/80)
+      * Responsible for Developer Guide checking

@@ -55,8 +55,6 @@ public class ParserUtilTest {
     private static final String INVALID_NOTE = "";
     private static final String VALID_DEADLINE = "2019-10-10";
     private static final String INVALID_DEADLINE = "2019";
-    private static final String VALID_RATING = "4";
-    private static final String INVALID_RATING = "6";
     private static final String VALID_SORT_FIELD = "name";
 
     private static final String LEADING_SEMICOLON = "; ";
@@ -360,6 +358,7 @@ public class ParserUtilTest {
         assertEquals(expectedTagSet, actualTagSet);
     }
 
+    //@@author jannaleong
     @Test
     public void parseDeadline_null_throwsNullPointerException() {
         assertThrows(NullPointerException.class, () -> ParserUtil
@@ -383,6 +382,7 @@ public class ParserUtilTest {
         DeadlineNote expectedDeadlineNote = new DeadlineNote(VALID_NOTE, VALID_DEADLINE);
         assertEquals(expectedDeadlineNote, ParserUtil.parseDeadlineNote(VALID_NOTE, VALID_DEADLINE));
     }
+    //@@author
 
     @Test
     public void parseRating_null_throwsNullPointerException() {

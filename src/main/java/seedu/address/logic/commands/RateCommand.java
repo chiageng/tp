@@ -14,6 +14,7 @@ import seedu.address.model.person.Name;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.Rating;
 
+//@@author jamessinmaojun
 /**
  * Rates a person identified using their displayed name from the address book.
  */

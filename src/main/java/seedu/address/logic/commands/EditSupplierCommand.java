@@ -35,6 +35,7 @@ import seedu.address.model.person.Rating;
 import seedu.address.model.person.Supplier;
 import seedu.address.model.tag.Tag;
 
+//@@author yleeyilin
 /**
  * Edits the details of an existing supplier in PoochPlanner.
  */
@@ -56,7 +57,7 @@ public class EditSupplierCommand extends Command {
             + "phone : " + "99820550 "
             + PREFIX_ADDRESS + "NUS College Avenue"
             + " }";
-    public static final String MESSAGE_NULL_NAME = "specified name to edit supplier is null";
+    public static final String MESSAGE_NULL_NAME = "Specified name to edit supplier is null.";
 
     private final Name name;
     private final EditSupplierDescriptor editSupplierDescriptor;

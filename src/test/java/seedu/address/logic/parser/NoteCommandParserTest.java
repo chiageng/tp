@@ -22,6 +22,7 @@ import seedu.address.logic.messages.NoteMessages;
 import seedu.address.model.person.DeadlineNote;
 import seedu.address.model.person.Note;
 
+//@@author jannaleong
 public class NoteCommandParserTest {
     private final NoteCommandParser parser = new NoteCommandParser();
     private final Note validNote = new Note("Cancel shipment with bob");

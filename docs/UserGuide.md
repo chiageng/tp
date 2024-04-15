@@ -28,25 +28,25 @@ By seamlessly combining the efficiency of a Command Line Interface (CLI) with an
 Get started by following the steps in this user guide! Experience the difference today with PoochPlanner — the ultimate solution tailored to your needs.
 
 ## Introducing PoochPlanner
-PoochPlanner is your go-to address book, tailor-made for dog cafe owners like you. With four main contact types — **person, staff, supplier, maintainer** — each equipped with its own set of attributes and functions, managing your contacts has never been easier.
+PoochPlanner is your go-to address book, tailor-made for dog cafe owners like yourself. With four main contact types — **person, staff, supplier, maintainer** — each equipped with its own set of attributes and functions, managing your contacts has never been easier.
 
 Contact | Definition and Examples
 --------|------------------
-Person | Any persons that do not fall under staff, supplier or maintainer.<br> E.g. neighbour, work friend
-Staff | Any full-time or part-time employee.<br> E.g. waiter, waitress, dishwasher
+Person | Any person that does not fall under staff, supplier, or maintainer.<br> E.g. neighbor, work friend
+Staff | Any full-time or part-time employee working in your dog cafe.<br> E.g. waiter, waitress, dishwasher
 Supplier | Any logistics partner that supplies stock for your dog cafe.<br> E.g. kibbles supplier, coffee beans supplier
-Maintainer | Any externally hired specialised personel that takes care of the dogs.<br> E.g. dog groomer, veterinarian
+Maintainer | Any externally hired specialized personnel that takes care of the dogs.<br> E.g. dog groomer, veterinarian
 
 <div style="page-break-after: always;"></div>
 
-But our commitment to improving your contact management experience doesn't end here. In addition to the essential functionalities like adding contacts, searching for contacts, editing contacts, deleting contacts, viewing help menus, listing all contacts, clearing contacts lists, undoing commands, and redoing commands, **PoochPlanner** comes loaded with extra features. You can now pin important contacts, jot down notes, set reminders, rate and even sort your contacts - all to ensure a seamless and efficient workflow tailored to your needs as a busy dog cafe owner.
+But our commitment to improving your contact management experience doesn't end here. In addition to the essential functionalities such as adding contacts, searching for contacts, editing contacts, deleting contacts, viewing help menus, listing all contacts, clearing all contacts, undoing commands, and redoing commands, **PoochPlanner** comes loaded with extra features. You can now pin important contacts, jot down notes, set reminders, rate, and even sort your contacts - all to ensure a seamless and efficient workflow tailored to your needs as a busy dog cafe owner.
 
 Feature | Purpose
 --------|------------------
 Pin/Unpin | Pin/Unpin contacts so that you can easily access your important contacts.
 Note | Add notes to contacts so that you can keep track of all of your important details.
-Remind | View reminders of upcoming deadlines so that you never miss any of your tasks.
-Rate | Add ratings to your contacts so that you can easily track their performance.
+Remind | View reminders of upcoming deadlines so that you will never miss any of your tasks.
+Rate | Add ratings to your contacts so that you can easily track the performances of your contacts.
 Sort | View your contacts in a sorted list so that you can easily filter and locate your contacts.
 
 <div style="page-break-after: always;"></div>
@@ -55,13 +55,13 @@ Sort | View your contacts in a sorted list so that you can easily filter and loc
 This user guide is designed to help you easily navigate the commands of PoochPlanner and make the most of this tool, whether you are a beginner or an experienced user.
 
 - If you are eager to get started with PoochPlanner, head over to our **[Quick Start](https://ay2324s2-cs2103t-w10-2.github.io/tp/UserGuide.html#quick-start)** section for easy-to-follow instructions on downloading PoochPlanner.
-- If you are a new user, explore the following sections to familiarise yourself with the basics:<br>
+- If you are a new user, explore the following sections to familiarize yourself with the basics:<br>
     1. **[Navigating the GUI](https://ay2324s2-cs2103t-w10-2.github.io/tp/UserGuide.html#navigating-the-gui)** : Learn about the input box and contact cards.<br>
     2. **[Features](https://ay2324s2-cs2103t-w10-2.github.io/tp/UserGuide.html#features)** : Discover the exciting features waiting for you.<br>
 - If you are an advanced user, dive into our special features to further enhance your experience:
     1. **[Rate](https://ay2324s2-cs2103t-w10-2.github.io/tp/UserGuide.html#rating-a-contact--rate)** : Add performance ratings to your contacts. <br>
     2. **[Pin](https://ay2324s2-cs2103t-w10-2.github.io/tp/UserGuide.html#pinning-a-contact--pin)** and **[Unpin](https://ay2324s2-cs2103t-w10-2.github.io/tp/UserGuide.html#unpinning-a-contact--unpin)** : Keep your frequent contacts accessible. <br>
-    3. **[Sort](https://ay2324s2-cs2103t-w10-2.github.io/tp/UserGuide.html#sorting-the-address-book--sort)** : Organise your contacts based on your preferences.<br>
+    3. **[Sort](https://ay2324s2-cs2103t-w10-2.github.io/tp/UserGuide.html#sorting-the-address-book--sort)** : Organize your contacts based on your preferences.<br>
     4. **[Note](https://ay2324s2-cs2103t-w10-2.github.io/tp/UserGuide.html#adding-a-note--note)** : Add notes to your contacts.<br>
     5. **[Remind](https://ay2324s2-cs2103t-w10-2.github.io/tp/UserGuide.html#viewing-reminders--remind)** : View your contacts with notes containing incoming deadlines.<br>
 - If you want a quick overview of our commands, check out our **[Command Summary](https://ay2324s2-cs2103t-w10-2.github.io/tp/UserGuide.html#command-summary)**.
@@ -71,7 +71,7 @@ This user guide is designed to help you easily navigate the commands of PoochPla
 
 ## Useful Notations and Glossary
 
-While exploring PoochPlanner’s features with this user guide, you can take note of these symbols used and what they represent.
+While exploring PoochPlanner’s features with this user guide, you can take note of the following symbols and what they represent.
 
 Symbol | Meaning
 --------|------------------
@@ -79,15 +79,15 @@ Symbol | Meaning
 :exclamation: | Warning or caution
 :bulb: | Additional information such as tips or notes
 
-The following glossary table provides clarification on commonly-used terminology.
+The following glossary table provides clarification on commonly used terminology.
 
 Phrases | Meaning
 --------|------------------
 GUI | GUI stands for Graphical User Interface and it represents the visual display of PoochPlanner that you see when PoochPlanner is running.
-GUI component | GUI component are parts that make up a GUI. For more information on specific GUI components, refer to this [section](#navigating-the-gui).
+GUI component | GUI components are parts that make up a GUI. For more information on specific GUI components, refer to this [section](#navigating-the-gui).
 CLI | CLI stands for Command Line Interface and it represents a text-based user interface to interact with PoochPlanner.
-Command | An input from the user that informs PoochPlanner to perform a specified action. View PoochPlanner’s [Command Summary](#command-summary).
-Prefix | Prefixes are fields that comes in a specified format (e.g. "; name :", "; phone :"). View PoochPlanner’s [Prefix Summary](#prefix-summary).
+Command | Command refers to an input from the user that informs PoochPlanner to perform a specified action. View PoochPlanner’s [Command Summary](#command-summary).
+Prefix | Prefixes are fields that come in a specified format (e.g. "; name :", "; phone :"). View PoochPlanner’s [Prefix Summary](#prefix-summary).
 Case-sensitive | The casing of the alphabetic characters matters (e.g. “good” is different from “GOOD”).
 Case-insensitive | The casing of the alphabetic characters does not matter (e.g. “good” is taken to be equivalent to “GOOD”).
 Space-sensitive | The number of spaces in a command matters (e.g. “happy puppy” is different from “happypuppy”).
@@ -160,16 +160,18 @@ Here is a quick look at the different GUI components of PoochPlanner.
 
 **:information_source: Notes about the command format:**<br>
 
-* Words in `[parameter]` are the parameter values to be given by you.<br>
+* Words in `[parameter]` are the parameter values to be keyed in by you.<br>
   For instance, in `/add-staff ; name : [name]`, you will need to key in a value for the `[name]` parameter. <br>
   For example, the actual command that you may input can be `/add-staff ; name : Poochie`.
 
 * Parameters can be in any order.<br>
-  For instance, if the command specifies `address : [address] ; phone : [phone]`, `phone : [phone] ; address : [address]` is also acceptable.
+  For instance, if the command specifies `address : [address] ; phone : [phone]`, `phone : [phone] ; address : [address]` is also equivalent.
 
-* If you are using a PDF version of this document, be careful when copying and pasting commands that span multiple lines as space characters surrounding line-breaks may be omitted when copied over to PoochPlanner. 
+* You should be careful when copying and pasting commands that span multiple lines as space characters surrounding line-breaks may be omitted when copied over to PoochPlanner. 
 
-* Commands are space-sensitive so you should take caution when entering the commands. Make sure that all of the prefixes that you key in have the correct spacing. <br> For instance, ` ; address : ` or ` ; phone : ` are correctly spaced prefixes. 
+* You should take caution when entering the commands as commands are space-sensitive.<br>
+  For instance, both ` ; address : ` and ` ; phone : ` are correctly spaced prefixes.  <br> 
+  Make sure that all prefixes that you have keyed in contain the correct spacing format. <br> 
 
 </div>
 
@@ -177,19 +179,18 @@ Here is a quick look at the different GUI components of PoochPlanner.
 
 ### Core Features
 
-[//]: # (@@author chiageng)
 #### Adding a contact: `add`
 
 Adds a **person / staff / supplier / maintainer** contact so that your contacts list can be updated with new contacts.
 
-The table below summarises the `add` command, format and examples for each contact type.
+The table below summarizes the `add` command, format, and examples for each contact type.
 
 | Adds a ...       | Format & Examples                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Person**       | Format :<br>`/add-person ; name : [name] ; phone : [phone] ; address : [address] ; email : [email]` <br> <br> Example: <br>`/add-person ; name : Janna  ; phone : 98765435 ; address : Poochie Street 24 ; email : ihelppooches@gmail.com`<br> <br>The above command adds a `Person`. Person's name is **_Janna_**, phone number is **_98765435_**, address is **_Poochie Street 24_**, and email is **_ihelppooches@gmail.com_**.                                                                                                                                                                 |
-| **Staff**        | Format : <br>`/add-staff ; name : [name] ; phone : [phone] ; address : [address] ; email : [email] ; salary : [salary/hr]  ; employment : [part-time/full-time]` <br> <br> Example: <br>`/add-staff ; name : Poochie ; phone : 98765435 ; address : Poochie Street 21 ; email : ilovecatstoo@gmail.com ; salary : $50/hr ; employment : part-time`<br> <br>The above command adds a `Staff`. Staff's name is **_Poochie_**, phone number is **_98765435_**, address is **_Poochie Street 21_**, email is **_ilovecatstoo@gmail.com_**, salary is **_$50/hr_**, and employment is **_part-time_**.     |
-| **Supplier**     | Format : <br>`/add-supplier ; name : [name] ; phone : [phone] ; address : [address] ; email : [email] ; product : [product] ; price : [price/(quantity)]` <br> <br> Example: <br>`/add-supplier ; name : PetCo ; phone : 98673098 ; address : Meow Street 24 ; email : ilovewombatstoo@gmail.com ; product : kibble ; price : $98/bag`<br> <br> The above command adds a `Supplier`. Supplier's name is **_Petco_**, phone number is **_98673098_**, address is **_Meow Street 24_**, email is **_ilovewombatstoo@gmail.com_**, product is **_kibble_**, and price of product is **_$98/bag_**.      |
-| **Maintainer**   | Format : <br>`/add-maintainer ; name : [name] ; phone : [phone] ; address : [address] ; email : [email] ; skill : [skill] ; commission : [commission/hr]` <br> <br> Example: <br>`/add-maintainer ; name : Tom Tan  ; phone : 98765435 ; address : Poochie Street 24 ; email : ihelppooches@gmail.com ; skill : trainer ; commission : $60/hr` <br> <br> The above command adds a `Maintainer`. Maintainer's name is **_Tom Tan_**, phone number is **_98765435_**, address is **_Poochie Street 24_**, email is **_ihelppooches@gmail.com_**, skill is **_trainer_**, and commission is **_$60/hr_**. |
+| **Person**       | Format :<br>`/add-person ; name : [name] ; phone : [phone] ; address : [address] ; email : [email]` <br> <br> Example: <br>`/add-person ; name : Janna  ; phone : 98765435 ; address : Poochie Street 24 ; email : ihelppooches@gmail.com`<br> <br>The above command adds a `Person` contact. Person's name is **_Janna_**, phone number is **_98765435_**, address is **_Poochie Street 24_**, and email is **_ihelppooches@gmail.com_**.                                                                                                                                                                 |
+| **Staff**        | Format : <br>`/add-staff ; name : [name] ; phone : [phone] ; address : [address] ; email : [email] ; salary : [salary/hr]  ; employment : [part-time/full-time]` <br> <br> Example: <br>`/add-staff ; name : Poochie ; phone : 98765435 ; address : Poochie Street 21 ; email : ilovecatstoo@gmail.com ; salary : $50/hr ; employment : part-time`<br> <br>The above command adds a `Staff` contact. Staff's name is **_Poochie_**, phone number is **_98765435_**, address is **_Poochie Street 21_**, email is **_ilovecatstoo@gmail.com_**, salary is **_$50/hr_**, and employment is **_part-time_**.     |
+| **Supplier**     | Format : <br>`/add-supplier ; name : [name] ; phone : [phone] ; address : [address] ; email : [email] ; product : [product] ; price : [price/(quantity)]` <br> <br> Example: <br>`/add-supplier ; name : PetCo ; phone : 98673098 ; address : Meow Street 24 ; email : ilovewombatstoo@gmail.com ; product : kibble ; price : $98/bag`<br> <br> The above command adds a `Supplier` contact. Supplier's name is **_Petco_**, phone number is **_98673098_**, address is **_Meow Street 24_**, email is **_ilovewombatstoo@gmail.com_**, product is **_kibble_**, and price of product is **_$98/bag_**.      |
+| **Maintainer**   | Format : <br>`/add-maintainer ; name : [name] ; phone : [phone] ; address : [address] ; email : [email] ; skill : [skill] ; commission : [commission/hr]` <br> <br> Example: <br>`/add-maintainer ; name : Tom Tan  ; phone : 98765435 ; address : Poochie Street 24 ; email : ihelppooches@gmail.com ; skill : trainer ; commission : $60/hr` <br> <br> The above command adds a `Maintainer` contact. Maintainer's name is **_Tom Tan_**, phone number is **_98765435_**, address is **_Poochie Street 24_**, email is **_ihelppooches@gmail.com_**, skill is **_trainer_**, and commission is **_$60/hr_**. |
 
 <br> 
 
@@ -207,6 +208,8 @@ The table below summarises the `add` command, format and examples for each conta
 <br> 
 
 <div markdown="block" class="alert alert-warning">:exclamation: **Constraints:**<br>
+
+* Contact type, person / staff / supplier / maintainer, must match command used. `/add-person`, `/add-staff`, `/add-supplier` and `/add-maintainer` respectively.<br>
 
 * The fields `salary` and `employment` are only for Staff contact type.<br>
 
@@ -233,17 +236,16 @@ The table below summarises the `add` command, format and examples for each conta
 
 <div markdown="block" class="alert alert-primary">:bulb: **Tip:**<br>
 
-* You can use the `undo` command to undo an `add` command so that you can revert your changes!<br>
+* You can use the `/undo` command to undo an `/add` command so that you can revert your changes!<br>
 
 </div>
 <div style="page-break-after: always;"></div>
-[//]: # (@@author)
 
 #### Editing a contact : `edit`
 
-Edits a **person / staff / supplier / maintainer** contact so that you can consistently modify and update your contacts list with new details.
+Edits a **person / staff / supplier / maintainer** contact so that you can consistently modify and update your contacts list in PoochPlanner with new details.
 
-The table below summarises the `edit` command, format and examples for each contact type.
+The table below summarizes the `edit` command, format, and examples for each contact type.
 
 | Edits a ...    | Format & Examples                                                                                                                                                                                                                                                                                                                                                                                                            |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -261,7 +263,7 @@ The table below summarises the `edit` command, format and examples for each cont
     <br>
     <medium>Input: <code>/edit-person ; name : Janna ; field : { address : Pooch Street 31 }</code></medium>
     <br>
-<medium>Output: Edits the address field of the contact named "Janna" in your contacts list.</medium>
+<medium>Output: Edits the address field of the contact named "Janna" in your contacts list to "Pooch Street 31".</medium>
     <br>
 </div>
 
@@ -269,24 +271,34 @@ The table below summarises the `edit` command, format and examples for each cont
 
 <div markdown="block" class="alert alert-warning">:exclamation: **Constraints:**<br>
 
+* Contact type, person / staff / supplier / maintainer, must match command used. `/edit-person`, `/edit-staff`, `/edit-supplier`, and `/edit-maintainer` respectively.<br>
+
 * `name` is a compulsory field that is case-insensitive and space-sensitive.<br>
 
 * A contact with the specified `name` must be present in your contacts list.<br>
 
-* Contact type, person / staff / supplier / maintainer, must match command used. `/edit-person`, `/edit-staff`, `/edit-supplier` and `/edit-maintainer` respectively.<br>
+* The fields `salary` and `employment` are only for Staff contact type.<br>
 
-* The field(s) to be edited must be valid field(s) (excluding name) within their contact type, i.e. Person / Staff / Supplier / Maintainer.<br>For example, the command <code>edit-person ; name : Pooch ; field : { product : kibble }</code> is invalid because the <code>product</code> is only a valid field for <code>Supplier</code> not <code>Person</code>.<br>
+* The fields `product` and `price` are only for Supplier contact type.<br>
+
+* The fields `skill` and `commission` are only for Maintainer contact type.<br>
 
 * At least one field must be provided.<br>
+
+* `phone` must be in the format {Number} and at least 3 digits long.<br>
+
+* `email` must in the format {example}@{domain} or {example}@{domain}.{extension}.<br>
 
 * `salary` and `commission` must be in the format ${Number}/hr.<br>
 
 * `price` must be in the format ${Number}/{quantity}.<br>
+
+* `employment` must be either "part-time" or "full-time".<br>
 </div>
 
 <div markdown="block" class="alert alert-primary">:bulb: **Tip:**<br>
 
-* You can edit multiple fields at the same time to save time!<br>
+* You can edit multiple fields simultaneously to save time!<br>
 
 </div>
 
@@ -302,17 +314,17 @@ Format: <br>
 Examples: <br>
 * `/search ; phone : 98765432`
 
-  The above command searches for all contacts with phone number `98765432`.
+  The above command searches for all contacts with the phone number `98765432`.
 
 
 * `/search ; salary : $50/hr`
 
-  The above command searches for all staff with salary `$50/hr`.
+  The above command searches for all staff with a salary `$50/hr`.
 
 
 * `/search ; name : Poochie ; phone : 98765432`
 
-  The above command searches for all contacts with name `Poochie` and phone number `98765432`.
+  The above command searches for all contacts with the name `Poochie` and the phone number `98765432`.
 
 <br> 
 
@@ -323,7 +335,7 @@ Examples: <br>
     <br>
     <medium>Input: <code>/search ; name : Tom</code></medium>
     <br>
-    <medium>Output: Finds all contacts that have "Tom" within their name from your contacts list.</medium>
+    <medium>Output: Finds all contacts that contain "Tom" in their names in your contacts list.</medium>
     <br>
 </div>
 
@@ -341,7 +353,7 @@ Examples: <br>
 * Duplicate entries for the same fields are not allowed. For instance, `/search ; name : Janna ; name : Poochie` is not allowed.<br>
 
 </div>
-
+<div style="page-break-after: always;"></div>
 <div markdown="block" class="alert alert-primary">:bulb: **Tips:**<br>
 
 * You can use `/list` to see your full contacts list again after searching for a contact!<br>
@@ -358,15 +370,16 @@ If you would like to search for `salaries`/`prices`/`commissions` within a speci
 
 * For instance, if you would like to search for all salaries within the range `$50-59/hr`, you may key in `/search ; salary : $5`, with `$5` as the search query. This displays all staff that are paid from `$50/hr` to `$59/hr`.<br>
 
-* Note that this query also searches for staff with salaries of exactly `$5/hr`, from `$500/hr` to `$599/hr` as well, and even in larger ranges too.<br>
+* Note that this query also searches for staff with salaries of exactly `$5/hr`, from `$500/hr` to `$599/hr` as well, and even in larger ranges.<br>
 
 </div>
+
 
 <div style="page-break-after: always;"></div>
 
 #### Deleting a contact : `delete`
 
-Deletes a **person / staff / supplier / maintainer** contact from your contacts list in PoochPlanner so that you can remove outdated contacts for your contacts list.
+Deletes a **person / staff / supplier / maintainer** contact from your contacts list in PoochPlanner so that you can remove your outdated contacts from PoochPlanner.
 
 Format: <br>
 `/delete ; name : [value]`
@@ -411,7 +424,7 @@ Format: <br>
 Example:
 * `/rate ; name : Poochie ; rating : 3`
 
-  The above command rates the contact named `Poochie` with a rating of `3`, provided a contact with name `Poochie` exists in your contacts list.
+  The above command rates the contact named `Poochie` with a rating of `3`, provided a contact with the name `Poochie` exists in your contacts list.
 
 <br> 
 
@@ -432,14 +445,14 @@ Example:
 
 * `rating` can only accept whole number values from `0` to `5` inclusive.<br>
 
-* A contact with the `name` must be present in your contacts list.<br>
+* A contact with the specified `name` must be present in your contacts list.<br>
 
-* `name` and `rating` are compulsory fields that are case-insensitive and space-sensitive.<br>
+* `name` and `rating` are compulsory fields that are both case-insensitive and space-sensitive.<br>
 
 * A `rating` of `0` is equivalent to no rating given and will not display any rating.<br>
 
 </div>
-
+<div style="page-break-after: always;"></div>
 <div markdown="block" class="alert alert-primary">:bulb: **Tip:**<br>
 
 * You can set a contact's `rating` to `0` to reset its rating!<br>
@@ -450,7 +463,7 @@ Example:
 
 #### Pinning a contact : `pin`
 
-Pins a **person / staff / supplier / maintainer** contact on PoochPlanner so that your important contacts will consistently appear at the top of your contacts list in PoochPlanner.
+Pins a **person / staff / supplier / maintainer** contact so that your important contacts will always appear at the top of your contacts list in PoochPlanner.
 
 Format: <br>
 `/pin ; name : [name]`
@@ -484,12 +497,12 @@ Example: <br>
 
 * Using the `pin` command on a contact that has been pinned does not make any changes to your contacts list and simply repins the same contact successfully.<br>
 
-* A contact will still remain pinned if you use the `undo` command once on a contact that has been pinned twice or more.<br>
+* A contact will remain pinned if you use the `undo` command once on a contact that has been pinned twice or more.<br>
 </div>
 
 <div markdown="block" class="alert alert-primary">:bulb: **Tips:**<br>
 
-* Use the `pin` command for your frequently contacted addresses!<br>
+* Use the `pin` command for your frequent contacts!<br>
 
 * For your convenience, if you have accidentally made a typo in the name value, you may conveniently rectify your mistake by retyping the name prefix and name value in your command as only the latest field will be processed.<br>
 
@@ -499,7 +512,7 @@ Example: <br>
 
 #### Unpinning a contact : `unpin`
 
-Unpins a **person / staff / supplier / maintainer** contact on PoochPlanner so that your less important contacts can be removed from the top of your contacts list in PoochPlanner.
+Unpins a **person / staff / supplier / maintainer** contact so that your less important contacts can be removed from the top of your contacts list in PoochPlanner.
 
 Format: <br>
 `/unpin ; name : [name]`
@@ -507,7 +520,7 @@ Format: <br>
 Example: <br>
 * `/unpin ; name : Poochie`
 
-  The above command unpins the contact named `Poochie`, provided a contact named `Poochie` exists and is pinned in your contacts list.
+  The above command unpins the contact named `Poochie`, provided a contact named `Poochie` exists in your contacts list.
 
 <br> 
 
@@ -534,9 +547,9 @@ Example: <br>
 
 * A contact with the specified `name` must be present in your contacts list.<br>
 
-* Using the `unpin` command on a contact that has been unpinned does not make any changes to your contacts list.<br>
+* Using the `unpin` command on a contact that is already unpinned does not make any changes to your contacts list and simply unpins the same contact successfully.<br>
 
-* A contact will still remain unpinned if you use the `undo` command once on a contact that has been unpinned twice or more.<br>
+* A contact will remain unpinned if you use the `undo` command once on a contact that has been unpinned twice or more.<br>
 </div>
 
 <div markdown="block" class="alert alert-primary">:bulb: **Tip:**<br>
@@ -549,7 +562,7 @@ Example: <br>
 
 #### Sorting the address book : `sort`
 
-Sorts the address book by a target field in lexicographical order so that you can display all of your contacts neatly and locate them easily.
+Sort the address book by a target field in lexicographical order so that you can display all of your contacts neatly and locate them easily.
 
 Format: <br>
 `/sort ; field : [target-field]`
@@ -578,7 +591,9 @@ Example: <br>
 
 * This command sorts by specifying a valid field, such as `name`, `phone`, `email`, `address`, `salary`, `employment`, `price`, `product`, `skill`, `commission`, `tag` or `note`.<br>
 
-* All field inputs are case-insensitive.<br>
+* All field values are case-insensitive.<br>
+
+* At least one field must be provided.<br>
 
 </div>
 
@@ -617,9 +632,9 @@ Add a note with a deadline:<br>
 <div style="text-align:center;">
     <br>
     <img src="images/ug-images/command-images/deadlinecommand.png" alt="Add before" style="width:100%;"/>
-    <medium>Above is an example of adding to a contact named "Ben".</medium>
+    <medium>Above is an example of adding a note to a contact named "Ben".</medium>
     <br>
-    <medium>Input: <code>/note ; name : Ben ; note : pay his salary of $1500 ; deadline : 2024-04-20</code></medium>
+    <medium>Input: <code>/note ; name : Ben ; note : pay his salary of $1500 ; deadline : 2024-05-20</code></medium>
     <br>
     <medium>Output: Adds a note with a deadline to the contact named "Ben" in your contacts list.</medium>
     <br>
@@ -645,22 +660,21 @@ Add a note with a deadline:<br>
 
 <div markdown="block" class="alert alert-primary">:bulb: **Tips:**<br>
 
-* Notes added are intended to be short details!<br>
+* Notes added are intended to be short details.<br>
 
 * To remove a note, specify in the note field `No note here`. **This note is case-sensitive**.<br>
 
-* For your convenience, if you have accidentally made a typo in the field value, you may conveniently rectify your mistake by retyping the corresponding corresponding prefix and field value in your command as only the latest field will be processed.<br>
+* For your convenience, if you have accidentally made a typo in the field value, you may conveniently rectify your mistake by retyping the corresponding prefix and field value in your command as only the latest field will be processed.<br>
 
-* Refrain from using `;` in your note. The use of `;` makes the command difficult to parse as ";" is used as a delimiter. This may result in your note not being captured. 
+* Refrain from using `;` in your note. The use of `;` makes the command difficult to parse as `;` is used as a delimiter. This may result in your note not being captured. 
 
 </div>
 
 <div style="page-break-after: always;"></div>
 
-[//]: # (@@author chiageng)
 #### Undoing a command : `undo`
 
-Undoes the most recent action so that you can revert changes back easily.
+Undoes the most recent action so that you can easily revert the changes that you made in PoochPlanner.
 
 Format: <br>
 `/undo`
@@ -679,7 +693,7 @@ Below is an example of undoing an `add` command:
     <img src="images/ug-images/command-images/beforeundocommand.png" alt="Add before" style="width:100%;"/>
     <medium>Input: <code>/add-person ; name : Tom ; phone : 99983932 ; address : Poochie Street 20 ; email : icleanpooches@gmail.com</code></medium>
     <br>
-    <medium>Output: Adds a contact named "Tom" to your contacts list.</medium>
+    <medium>Output: Add a contact named "Tom" to your contacts list.</medium>
     <br>
 </div>
 
@@ -711,7 +725,7 @@ Below is an example of undoing an `add` command:
 
 * `/undo` works on all commands that have modified your contacts list.<br>
 
-* `/undo` will not work on commands that do not modify your contacts list such as `/search`, `/list` and `/help` commands!<br>
+* `/undo` will not work on commands that do not modify your contacts list such as `/search`, `/list`, and `/help` commands!<br>
 
 </div>
 
@@ -719,7 +733,7 @@ Below is an example of undoing an `add` command:
 
 #### Redoing a command : `redo`
 
-Redoes an action so that you can reverse any unintentional uses of the `undo` command.
+Redoes the most recent undo action so that you can easily revert any unintentional uses of the `undo` command that you made in PoochPlanner.
 
 Format: <br>
 `/redo`
@@ -768,15 +782,14 @@ Below is an example of redoing an <code>add</code> command :
 
 <div markdown="block" class="alert alert-primary">:bulb: **Tips:**<br>
 
-* `/redo` works on all commands that modified your contacts list. <br>
+* `/redo` works on all commands that modify your contacts list. <br>
 
-* `/redo` will not work on commands that do not modify your contacts list such as `/search`, `/list` and `/help` commands!<br>
+* `/redo` will not work on commands that do not modify your contacts list such as `/search`, `/list`, and `/help` commands!<br>
 
 </div>
 
 <div style="page-break-after: always;"></div>
 
-[//]: # (@@author)
 
 #### Viewing help : `help`
 
@@ -843,7 +856,7 @@ Example: <br>
 <div style="text-align:center;">
     <br>
     <img src="images/ug-images/command-images/remindcommand.png" alt="Add before" style="width:100%;"/>
-    <medium>Above is an example of getting reminders of contacts with notes containing deadlines from today onwards.</medium>
+    <medium>Above is an example of getting a reminder of a contact with a specified note deadline after today.</medium>
     <br>
     <medium>Input: <code>/remind</code></medium>
     <br>
@@ -857,15 +870,15 @@ Example: <br>
 
 * Specifying `/remind [any text]` is equivalent to `/remind`.<br>
 
-* To return back to your full contacts list, you can use the command `/list`.
+* To revert back to your full contacts list, you can use the command `/list`.
 
 </div>
 
 <div style="page-break-after: always;"></div>
 
-#### Clearing contacts : `clear`
+#### Clearing all contacts : `clear`
 
-Removes all contacts from your contacts list so that you can reset your contacts list easily.
+Remove all contacts from your contacts list so that you can reset your contacts list easily.
 
 Format: <br>
 `/clear`
@@ -892,15 +905,15 @@ Example: <br>
 
 <div markdown="block" class="alert alert-primary">:bulb: **Tip:**<br>
 
-* To return back to your full contacts list, you can use the command `/list`.
+* To revert to your full contacts list, you can use the command `/undo`.
 
 </div>
 
 <div style="page-break-after: always;"></div>
 
-#### Listing contacts : `list`
+#### Listing all contacts : `list`
 
-Lists all contacts in your PoochPlanner so that you can view all contacts in your contacts list at once.
+Lists all contacts in your PoochPlanner so that you can view all of your contacts in PoochPlanner at once.
 
 Format: <br>
 `/list`
@@ -927,7 +940,7 @@ Example: <br>
 
 <div markdown="block" class="alert alert-primary">:bulb: **Tip:**<br>
 
-* To return back to your full contacts list after using any filtering commands such as `/search`, you can use the command `/list`.
+* To revert to your full contacts list after using any filtering commands such as `/search`, you can use the command `/list`.
 
 </div>
 
@@ -941,7 +954,7 @@ Format: `/exit`
 
 ### Saving the data
 
-Data in your PoochPlanner is saved in the hard disk automatically after any command that modfies the data. You will not need to save any data manually.
+Data in your PoochPlanner is saved in the hard disk automatically after any command that modifies the data. You will not need to save any data manually.
 
 ### Editing the data file
 
@@ -949,8 +962,8 @@ Data in your PoochPlanner is saved automatically as a JSON file `[JAR file locat
 
 <div markdown="block" class="alert alert-warning">:exclamation: **Caution:**<br>
 
-Manually editing the JSON file is not advised and should be taken with extreme caution.<br>If your changes to the data file makes its format invalid, your PoochPlanner may discard all data and start with an empty data file on the next run. <br>Hence, it is recommended to make a backup of the file before editing it.<br>
-Furthermore, certain manual edits can cause your PoochPlanner to behave in unexpected ways (e.g., if a value entered lies outside its acceptable range).
+Manually editing the JSON file is not advised and should be taken with extreme caution.<br>If your changes to the data file make its format invalid, your PoochPlanner may discard all data and start with an empty data file on the next run. <br>Hence, it is recommended that you make a backup of the file before editing it.<br>
+Furthermore, certain manual edits that you make can cause your PoochPlanner to behave in unexpected ways (e.g. if a value entered lies outside its acceptable range).
 </div>
 
 <div style="page-break-after: always;"></div>
@@ -958,7 +971,7 @@ Furthermore, certain manual edits can cause your PoochPlanner to behave in unexp
 ## Common Errors
 ### Unknown Command
 
-If you encounter an unknown command error, please ensure the command entered is a valid command mentioned
+If you encounter an unknown command error, please ensure that the command you entered is a valid command mentioned
 in our [Command Summary](#command-summary). Below is an example of an unknown command input and the corresponding error message.
 <br>
 
@@ -972,7 +985,7 @@ in our [Command Summary](#command-summary). Below is an example of an unknown co
 
 ### Invalid Field
 
-If you encounter an invalid field error, please ensure that the field entered is a valid field for the command you
+If you encounter an invalid field error, please ensure that the field you entered is a valid field for the command you
 are using. Refer to our [Command Summary](#command-summary) for a list of valid fields for each PoochPlanner command.<br>Below is an example of a command with an invalid field and the corresponding error message.
 <br>
 
@@ -986,19 +999,18 @@ are using. Refer to our [Command Summary](#command-summary) for a list of valid 
 
 ### Missing Field
 
-If you encounter a missing field error, please ensure the fields listed in the error message are present in your command input. Refer to our [Command Summary](#command-summary) for a list of fields required for all PoochPlanner commands. Below is an example of a command with a missing field and the corresponding error message.
+If you encounter a missing field error, please ensure that the fields listed in the error message are present in your command input. Refer to our [Command Summary](#command-summary) for a list of fields required for all PoochPlanner commands. Below is an example of a command with a missing field and the corresponding error message.
 <br>
 
 <div style="text-align:center;">
     <br>
     <img src="images/ug-images/error-images/missingField.png" alt="Add before" style="width:100%;"/>
-    <medium>The above image depicts a missing field error caused by a <code>note</code> command with missing fields.</medium>
+    <medium>The above image depicts a missing field error caused by a <code>note</code> command with missing fields for "name" and "note".</medium>
     <br>
 </div>
 <div style="page-break-after: always;"></div>
 
 ## FAQ
-
 ### Launching PoochPlanner
 
 **Q**: How can I launch PoochPlanner if clicking on the JAR file does not work?<br>
@@ -1069,26 +1081,25 @@ Example: Adding a new contact with a note and a rating
 
 A **prefix** is an integral construct of PoochPlanner's commands that allow PoochPlanner to uniquely identify contact fields.
 
-| Prefix           | Field                                                   | Contact Type   |
-|------------------|---------------------------------------------------------|----------------|
-| `; name :`       | Specifies the name of the contact.                      | All            |
-| `; phone :`      | Specifies the phone number of the contact.              | All            |
-| `; address :`    | Specifies the address of the contact.                   | All            |
-| `; email :`      | Specifies the email address of the contact.             | All            |
-| `; note :`       | Specifies the note appended to the contact.             | All            |
-| `; rating :`     | Specifies the rating given to the contact.              | All            |
-| `; deadline :`   | Specifies the deadline of note appended to the contact. | All            |
-| `; command :`    | Specifies the command type to give help for.            | All            |
-| `; salary :`     | Specifies the salary of the contact.                    | Staff          |
-| `; employment :` | Specifies the employment of the contact.                | Staff          |
-| `; product :`    | Specifies the product sold by the contact.              | Supplier       |
-| `; price :`      | Specifies the price charged by the contact.             | Supplier       |
-| `; skill :`      | Specifies the type of service offered by the contact.   | Maintainer     |
-| `; commission :` | Specifies the commission charged by the contact.        | Maintainer     |
+| Prefix           | Field                                                       | Contact Type   |
+|------------------|-------------------------------------------------------------|----------------|
+| `; name :`       | Specifies the name of the contact.                          | All            |
+| `; phone :`      | Specifies the phone number of the contact.                  | All            |
+| `; address :`    | Specifies the address of the contact.                       | All            |
+| `; email :`      | Specifies the email address of the contact.                 | All            |
+| `; note :`       | Specifies the note appended to the contact.                 | All            |
+| `; rating :`     | Specifies the rating given to the contact.                  | All            |
+| `; deadline :`   | Specifies the deadline of the note appended to the contact. | All            |
+| `; command :`    | Specifies the command type to give help for.                | All            |
+| `; salary :`     | Specifies the salary of the contact.                        | Staff          |
+| `; employment :` | Specifies the employment of the contact.                    | Staff          |
+| `; product :`    | Specifies the product sold by the contact.                  | Supplier       |
+| `; price :`      | Specifies the price charged by the contact.                 | Supplier       |
+| `; skill :`      | Specifies the type of service offered by the contact.       | Maintainer     |
+| `; commission :` | Specifies the commission charged by the contact.            | Maintainer     |
 
 <div style="page-break-after: always;"></div>
 
-[//]: # (@@author chiageng)
 ## Command Summary
 
 | Action              | Format and Example                                                                                                                                                                                                                                                                                                                                   |

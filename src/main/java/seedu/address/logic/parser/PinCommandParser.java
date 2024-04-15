@@ -14,11 +14,12 @@ import seedu.address.logic.messages.PinMessages;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.person.Name;
 
+//@@author yleeyilin
 /**
  * Parses input arguments and creates a new PinCommand object.
  */
 public class PinCommandParser implements Parser<PinCommand> {
-    public static final String MESSAGE_NULL_ARGUMENTS = "argument to pass for pin command is null";
+    public static final String MESSAGE_NULL_ARGUMENTS = "Arguments to pass into pin command is null.";
     public static final String MESSAGE_COMMENCE_PARSING = "Going to start parsing for pin command.";
 
     private final Logger logger = LogsCenter.getLogger(getClass());

@@ -1,5 +1,6 @@
 package seedu.address.model.person;
 
+//@@author yleeyilin
 /**
  * Represents a Person's Pin in the address book.
  */
@@ -29,5 +30,25 @@ public class Pin {
     @Override
     public String toString() {
         return isPin ? "true" : "false";
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (other == this) {
+            return true;
+        }
+
+        // instanceof handles nulls
+        if (!(other instanceof Note)) {
+            return false;
+        }
+
+        Pin otherPin = (Pin) other;
+        return isPin.equals(otherPin.isPin);
+    }
+
+    @Override
+    public int hashCode() {
+        return isPin.hashCode();
     }
 }

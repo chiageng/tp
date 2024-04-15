@@ -742,6 +742,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ### Use cases
 
+[//]: # (@@author chiageng)
 **System**: `PoochPlanner`
 
 **Use case**: `UC01 - Adding a contact`
@@ -798,8 +799,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
    
 * 1g. PoochPlanner detects an invalid salary format.
     * 1g1. PoochPlanner displays the error message.
-    * 1g2. User re-enters a new command with a correct salary format.
-    * Steps 1g1 - 1g2 are repeated until there are no errors with the input.
+    * 1g2. User re-enters a new command with a correct price format.
+    * Steps 1g1 - 1g2 are repeated until there are no errors in input.
     * Use case resumes from step 2.
 
 * 1h. PoochPlanner detects an invalid price format.
@@ -843,6 +844,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
   * 1n2. User re-enters a new command with a correct name format.
   * Steps 1n1 - 1n2 are repeated until there are no errors with the input.
   * Use case resumes from step 2.
+
+[//]: # (@@author)
 
 <div style="page-break-after: always;"></div>
 
@@ -1724,7 +1727,7 @@ testers are expected to do more *exploratory* testing.
   
 1. Adding a note (no deadline) to a contact
   
-   1. Prerequisites: The contact to add a note to must already exist. This contact can be of `Person`/`Supplier`/`Staff`/`Maintainer` type. You can run the following command to add a note to a contact:<br>
+   1. Prerequisites: The contact to add a note to must already exist. This contact can be of `Person`/`Supplier`/`Staff`/`Maintainer` type. You can run the following command to add a contact:<br>
       `/add-person ; name : Poochie ; phone : 98883888 ; address : Pooch Street 32 ; email : impoochie@gmail.com`
         
    2. Test case: `/note ; name : Poochie ; note : get kibble`<br>
@@ -1732,7 +1735,7 @@ testers are expected to do more *exploratory* testing.
 
 2. Adding a note (with deadline) to a contact
   
-   1. Prerequisites: The contact to add a note to must already exist. This contact can be of `Person`/`Supplier`/`Staff`/`Maintainer` type. You can run the following command to add a note to a contact:<br>
+   1. Prerequisites: The contact to add a note to must already exist. This contact can be of `Person`/`Supplier`/`Staff`/`Maintainer` type. You can run the following command to add a contact:<br>
       `/add-person ; name : Poochie ; phone : 98883888 ; address : Pooch Street 32 ; email : impoochie@gmail.com`
         
    2. Test case: `/note ; name : Poochie ; note : get kibble ; deadline : 2024-10-10`<br>

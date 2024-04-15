@@ -99,6 +99,7 @@ public class AddressBookParserTest {
         assertEquals(new DeleteCommand(ALICE.getName()), command);
     }
 
+    //@@author yleeyilin
     @Test
     public void parseCommand_edit() throws Exception {
         Person person = new PersonBuilder().build();
@@ -142,6 +143,7 @@ public class AddressBookParserTest {
                 + PersonUtil.getEditMaintainerDescriptorDetails(descriptor) + "}");
         assertEquals(new EditMaintainerCommand(maintainer.getName(), descriptor), command);
     }
+    //@@author
 
     @Test
     public void parseCommand_exit() throws Exception {
@@ -149,12 +151,14 @@ public class AddressBookParserTest {
         assertTrue(parser.parseCommand(ExitCommand.COMMAND_WORD + " 3") instanceof ExitCommand);
     }
 
+    //@@author jannaleong
     @Test
     public void parseCommand_help() throws Exception {
         HelpCommand command = (HelpCommand) parser.parseCommand(
                 HelpCommand.COMMAND_WORD + " ; command : " + "add");
         assertEquals(new HelpCommand("add"), command);
     }
+    //@@author
 
     @Test
     public void parseCommand_list() throws Exception {
@@ -171,11 +175,13 @@ public class AddressBookParserTest {
         assertEquals(new SearchCommand(new KeywordPredicate(token)), command);
     }
 
+    //@@author jannaleong
     @Test
     public void parseCommand_note() throws Exception {
         NoteCommand noteCommand = (NoteCommand) parser.parseCommand("/note ; name : Bob Choo ; note : get kibble");
         assertTrue(noteCommand instanceof NoteCommand);
     }
+    //@@author
 
     @Test
     public void parseCommand_redo() throws Exception {
@@ -189,6 +195,7 @@ public class AddressBookParserTest {
         assertTrue(undoCommand instanceof UndoCommand);
     }
 
+    //@@author yleeyilin
     @Test
     public void parseCommand_pin() throws Exception {
         PinCommand pinCommand = (PinCommand) parser.parseCommand("/pin ; name : Bob Choo");
@@ -200,12 +207,15 @@ public class AddressBookParserTest {
         UnpinCommand unpinCommand = (UnpinCommand) parser.parseCommand("/unpin ; name : Bob Choo");
         assertEquals(new UnpinCommand(new Name("Bob Choo")), unpinCommand);
     }
+    //@@author
 
+    //@@author jannaleong
     @Test
     public void parseCommand_remind() throws Exception {
         RemindCommand remindCommand = (RemindCommand) parser.parseCommand("/remind");
         assertTrue(remindCommand instanceof RemindCommand);
     }
+    //@@author
 
     @Test
     public void parseCommand_unrecognisedInput_throwsParseException() {

@@ -56,6 +56,7 @@ public class Staff extends Person {
     }
     //@@author
 
+    //@@ jamessinmaojun
     /**
      * Returns a new instantiation of the current {@code Staff} with the updated rating,
      * which throws {@code UnsupportedOperationException} if modification is attempted.
@@ -67,7 +68,9 @@ public class Staff extends Person {
         staffToReturn.setPinIfPinned(this);
         return staffToReturn;
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
      * Returns a new instantiation of the current {@code Staff} with the updated pin,
      * which throws {@code UnsupportedOperationException} if modification is attempted.
@@ -79,7 +82,9 @@ public class Staff extends Person {
         staffToReturn.toPin();
         return staffToReturn;
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
      * Returns a new instantiation of the current {@code Staff} with the updated unpin,
      * which throws {@code UnsupportedOperationException} if modification is attempted.
@@ -91,6 +96,7 @@ public class Staff extends Person {
         staffToReturn.toUnpin();
         return staffToReturn;
     }
+    //@@author
 
     //@@author chiageng
     /**

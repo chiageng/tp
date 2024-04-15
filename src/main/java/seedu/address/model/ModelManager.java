@@ -182,6 +182,7 @@ public class ModelManager implements Model {
         filteredPersons.setPredicate(predicate);
         commitAddressBook();
     }
+    //@@author
 
     @Override
     public boolean equals(Object other) {
@@ -200,6 +201,7 @@ public class ModelManager implements Model {
                 && filteredPersons.equals(otherModelManager.filteredPersons);
     }
 
+    //@@author yleeyilin
     /**
      * Update the person list to display pinned contacts first.
      */
@@ -207,6 +209,7 @@ public class ModelManager implements Model {
         addressBook.updatePinnedList();
         commitAddressBook();
     }
+    //@@author
 
     /**
      * Sorts the contact list by a specified parameter.
@@ -216,6 +219,7 @@ public class ModelManager implements Model {
         commitAddressBook();
     }
 
+    //@@author yleeyilin
     /**
      * Find a general contact by their name.
      * @param targetName Refers to the name identifier.
@@ -233,7 +237,9 @@ public class ModelManager implements Model {
         }
         throw new CommandException(message);
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
      * Find a person by their name.
      * @param targetName Refers to the name identifier.
@@ -254,7 +260,9 @@ public class ModelManager implements Model {
         }
         throw new CommandException(message);
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
      * Find a maintainer by their name.
      * @param targetName Refers to the name identifier.
@@ -272,7 +280,9 @@ public class ModelManager implements Model {
         }
         throw new CommandException(message);
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
      * Find a staff by their name.
      * @param targetName Refers to the name identifier.
@@ -290,7 +300,9 @@ public class ModelManager implements Model {
         }
         throw new CommandException(message);
     }
+    //@@author
 
+    //@@author yleeyilin
     /**
      * Find a supplier by their name.
      * @param targetName Refers to the name identifier.
@@ -308,4 +320,5 @@ public class ModelManager implements Model {
         }
         throw new CommandException(message);
     }
+    //@@author
 }

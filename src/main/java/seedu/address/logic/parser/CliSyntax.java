@@ -29,6 +29,7 @@ public class CliSyntax {
     public static final Prefix PREFIX_HELP = new Prefix("; command : ");
     public static final Prefix PREFIX_DEADLINE = new Prefix("; deadline : ");
 
+    //@@author Joshy837
     public static final Prefix[] PREFIX_SEARCH_COLLECTION = new Prefix[] {
         PREFIX_NAME,
         PREFIX_PHONE,
@@ -64,4 +65,5 @@ public class CliSyntax {
         PREFIX_PIN,
         PREFIX_RATING
     };
+    //@@author
 }

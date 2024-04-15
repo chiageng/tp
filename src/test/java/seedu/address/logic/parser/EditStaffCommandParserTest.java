@@ -45,6 +45,10 @@ import seedu.address.model.person.Phone;
 import seedu.address.testutil.EditStaffDescriptorBuilder;
 import seedu.address.testutil.PersonUtil;
 
+//@@author yleeyilin
+/**
+ * Contains unit tests for {@code EditStaffCommandParser}.
+ */
 public class EditStaffCommandParserTest {
     private final EditStaffCommandParser parser = new EditStaffCommandParser();
 

@@ -13,6 +13,7 @@ import seedu.address.model.Model;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Person;
 
+//@@author yleeyilin
 /**
  * Unpins a contact in PoochPlanner.
  */
@@ -24,8 +25,8 @@ public class UnpinCommand extends Command {
             + "\n"
             + "Example: " + COMMAND_WORD + " "
             + PREFIX_NAME + "John Doe other ";
-    public static final String MESSAGE_NULL_NAME = "specified name to unpin contact is null";
-    public static final String LOGGER_EXECUTE_UNPIN_MESSAGE = "started executing the unpin command";
+    public static final String MESSAGE_NULL_NAME = "Specified name to unpin contact is null.";
+    public static final String LOGGER_EXECUTE_UNPIN_MESSAGE = "Started executing the unpin command.";
 
     private final Name name;
     private final Logger logger = LogsCenter.getLogger(getClass());
