@@ -194,7 +194,7 @@ The following sequence diagram models the interactions between the different com
 2. The user inputs `/add-person ; name : John Doe ; phone : 98765432 ; email : johnd@example.com ; address : 311, Clementi Ave 2, #02-25` into the CLI.
 3. The contact card for the person named "John Doe" is created. This change should be reflected in the contacts list in PoochPlanner.
 
-[//]: # (@@author)
+[//]: # (@@author yleeyilin)
 
 <div style="page-break-after: always;"></div>
 
@@ -363,6 +363,8 @@ execution of the `rate` command:
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author yleeyilin)
+
 ### Pin and Unpin features
 
 #### Overview
@@ -447,6 +449,8 @@ The following sequence diagram models the interactions between the different com
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author jannaleong)
+
 ### Note feature
 
 #### Overview
@@ -487,6 +491,8 @@ The following sequence diagram models the interactions between the different com
   inner details of `Person` objects directly.
 
 <div style="page-break-after: always;"></div>
+
+[//]: # (@@author)
 
 [//]: # (@@author chiageng)
 ### Undo and redo features
@@ -578,7 +584,7 @@ The following activity diagram summarizes what happens when a user executes a ne
 * Pros: Significant reduction in memory overhead.
 * Cons: Not all commands have an inverse (e.g. the `sort` command is not a bijection and hence no single function exists as its inverse).
 
-[//]: # (@@author)
+[//]: # (@@author jannaleong)
 
 <div style="page-break-after: always;"></div>
 
@@ -635,7 +641,7 @@ The following sequence diagram models the interactions between the different com
 2. A `LogicManager` object invokes the `execute` method of a `RemindCommand` object.
 3. The `execute` method of the `RemindCommand` object invokes the `updateFilteredPersonList` method of its `Model` argument to update the view of the application to show contacts
    with note deadlines from today onwards.
-4. The `execute` method of the `NoteCommand` object returns a `CommandResult` object which stores the data regarding the completion of the `remind` command.
+4. The `execute` method of the `RemindCommand` object returns a `CommandResult` object which stores the data regarding the completion of the `remind` command.
 
 #### Example Usage
 
@@ -695,6 +701,8 @@ The following sequence diagram models the interactions between the different com
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author)
+
 ## **Documentation, logging, testing, configuration, dev-ops**
 
 * [Documentation guide](Documentation.md)
@@ -742,7 +750,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ### Use cases
 
-[//]: # (@@author chiageng)
+[//]: # (@@author yleeyilin)
 **System**: `PoochPlanner`
 
 **Use case**: `UC01 - Adding a contact`
@@ -845,7 +853,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
   * Steps 1n1 - 1n2 are repeated until there are no errors with the input.
   * Use case resumes from step 2.
 
-[//]: # (@@author)
+* [//]: # (@@author)
+
+[//]: # (@@author yleeyilin)
 
 <div style="page-break-after: always;"></div>
 
@@ -953,6 +963,10 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author)
+
+[//]: # (@@author yleeyilin)
+
 **System**: `PoochPlanner`
 
 **Use case**: `UC03 - Searching for a contact`
@@ -985,6 +999,10 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author)
+
+[//]: # (@@author yleeyilin)
+
 **System**: `PoochPlanner`
 
 **Use case**: `UC04 - Deleting a contact`
@@ -1016,6 +1034,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
   * Use case resumes from step 2.
 
 <div style="page-break-after: always;"></div>
+
+[//]: # (@@author)
 
 **System**: `PoochPlanner`
 
@@ -1061,6 +1081,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author yleeyilin)
+
 **System**: `PoochPlanner`
 
 **Use case**: `UC06 - Pinning a contact`
@@ -1096,6 +1118,10 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
   * Use case resumes from step 2.
 
 <div style="page-break-after: always;"></div>
+
+[//]: # (@@author)
+
+[//]: # (@@author yleeyilin)
 
 **System**: `PoochPlanner`
 
@@ -1135,6 +1161,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author)
+
 **System**: `PoochPlanner`
 
 **Use case**: `UC08 - Sorting the contacts list`
@@ -1166,6 +1194,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
   * Use case resumes from step 2.
 
 <div style="page-break-after: always;"></div>
+
+[//]: # (@@author jannaleong)
 
 **System**: `PoochPlanner`
 
@@ -1261,6 +1291,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author)
+
 [//]: # (@@author chiageng)
 
 **System**: `PoochPlanner`
@@ -1315,6 +1347,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author jannaleong)
+
 **System**: `PoochPlanner`
 
 **Use case**: `UC13 - Viewing help`
@@ -1357,6 +1391,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author)
+
 **System**: `PoochPlanner`
 
 **Use case**: `UC15 - Clearing the contacts list`
@@ -1393,7 +1429,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 <div style="page-break-after: always;"></div>
 
-[//]: # (@@author chiageng)
 
 ### Non-Functional Requirements
 
@@ -1408,8 +1443,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 9. The system should respond within 2 seconds. 
 10. The data should be stored locally and should not be accessible from other devices due to privacy issues.
     
-[//]: # (@@author)
-
 <div style="page-break-after: always;"></div>
 
 ### Glossary
@@ -1427,7 +1460,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 <div style="page-break-after: always;"></div>
 
-[//]: # (@@author chiageng)
 ## **Appendix: Planned Enhancement**
 
 1. Enhance commands to be space-insensitive
@@ -1474,8 +1506,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 10. Enhance undo command upon pinning or unpinning
     1. Currently, when using pin command two or more times, calling undo once will not revert the pin operation. This is similar for unpin since they both share the same implementation.
     2. We plan to allow users to use undo only once to undo all repeated and consecutive pin/unpin attempts.
-
-[//]: # (@@author)
 
 <div style="page-break-after: always;"></div>
 
@@ -1540,7 +1570,7 @@ testers are expected to do more *exploratory* testing.
    2. Test case: ` /add-maintainer ; name : Maintainer1 ; phone : 98765435 ; address : Poochie Street 24 ; email : ihelppooches@gmail.com ; skill : trainer ; commission : $60/hr`<br>
      Expected: Adds a maintainer named "Maintainer1" into the contacts list. Details of the added contact is shown in the status message.
 
-[//]: # (@@author)
+[//]: # (@@author yleeyilin)
 
 <div style="page-break-after: always;"></div>
 
@@ -1613,6 +1643,8 @@ testers are expected to do more *exploratory* testing.
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author)
+
 ### Searching a contact
 
 1. Searching contacts by name
@@ -1676,6 +1708,8 @@ testers are expected to do more *exploratory* testing.
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author yleeyilin)
+
 ### Pinning a contact
   
 1. Pinning a contact while all contacts are being shown
@@ -1698,6 +1732,8 @@ testers are expected to do more *exploratory* testing.
       Expected: Contact named **_Poochie_** is no longer pinned at the top of the contact list.
 
 <div style="page-break-after: always;"></div>
+
+[//]: # (@@author)
 
 ### Sorting contacts list
 
@@ -1723,6 +1759,8 @@ testers are expected to do more *exploratory* testing.
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author jannaleong)
+
 ### Adding a note to a contact
   
 1. Adding a note (no deadline) to a contact
@@ -1742,6 +1780,8 @@ testers are expected to do more *exploratory* testing.
       Expected: Adds a note with deadline to a contact named **_Poochie_**.
 
 <div style="page-break-after: always;"></div>
+
+[//]: # (@@author)
 
 [//]: # (@@author chiageng)
 
@@ -1784,6 +1824,8 @@ testers are expected to do more *exploratory* testing.
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author jannaleong)
+
 ### Viewing reminders
   
 1. Viewing a reminder
@@ -1796,6 +1838,19 @@ testers are expected to do more *exploratory* testing.
       Expected: Displays the contact named **_Poochie_** with the note deadline after today (note: if there are other contacts in the contacts list with notes that have deadlines on or after today's date, they will also appear).
 
 <div style="page-break-after: always;"></div>
+
+<div style="page-break-after: always;"></div>
+
+### Viewing help
+
+1. Viewing help
+
+1. Test case: /help ; command : delete<br>
+   Expected: Displays help details for the delete command.
+
+<div style="page-break-after: always;"></div>
+
+[//]: # (@@author)
 
 [//]: # (@@author chiageng)
 
