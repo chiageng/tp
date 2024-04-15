@@ -1457,7 +1457,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 <div style="page-break-after: always;"></div>
 
-## **Appendix: Planned Enhancement**
+## **Appendix: Planned Enhancements**
 
 1. Enhance commands to be space-insensitive
    1. Currently, we do not allow for incorrect spacings in commands. 
@@ -1833,8 +1833,6 @@ testers are expected to do more *exploratory* testing.
         
    2. Test case: `/remind`<br>
       Expected: Displays the contact named **_Poochie_** with the note deadline after today (note: if there are other contacts in the contacts list with notes that have deadlines on or after today's date, they will also appear).
-
-<div style="page-break-after: always;"></div>
 
 <div style="page-break-after: always;"></div>
 
