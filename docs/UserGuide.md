@@ -136,7 +136,7 @@ Contact card | The box displayed for each contact which contains all of their re
 
 7. Refer to our [Features](#features) section below for the details of each command.
 
-
+[//]: # (@@author [jannaleong])
 <div style="page-break-after: always;"></div>
 
 ## Navigating the GUI
@@ -154,6 +154,8 @@ Here is a quick look at the different GUI components of PoochPlanner.
 
 
 <div style="page-break-after: always;"></div>
+
+[//]: # (@@author)
 
 ## Features
 <div markdown="block" class="alert alert-info">
@@ -180,7 +182,7 @@ Here is a quick look at the different GUI components of PoochPlanner.
 ### Core Features
 
 #### Adding a contact: `add`
-
+[//]: # (@@author [jannaleong])
 Adds a **person / staff / supplier / maintainer** contact so that your contacts list can be updated with new contacts.
 
 The table below summarizes the `add` command, format, and examples for each contact type.
@@ -191,7 +193,7 @@ The table below summarizes the `add` command, format, and examples for each cont
 | **Staff**        | Format : <br>`/add-staff ; name : [name] ; phone : [phone] ; address : [address] ; email : [email] ; salary : [salary/hr]  ; employment : [part-time/full-time]` <br> <br> Example: <br>`/add-staff ; name : Poochie ; phone : 98765435 ; address : Poochie Street 21 ; email : ilovecatstoo@gmail.com ; salary : $50/hr ; employment : part-time`<br> <br>The above command adds a `Staff` contact. Staff's name is **_Poochie_**, phone number is **_98765435_**, address is **_Poochie Street 21_**, email is **_ilovecatstoo@gmail.com_**, salary is **_$50/hr_**, and employment is **_part-time_**.     |
 | **Supplier**     | Format : <br>`/add-supplier ; name : [name] ; phone : [phone] ; address : [address] ; email : [email] ; product : [product] ; price : [price/(quantity)]` <br> <br> Example: <br>`/add-supplier ; name : PetCo ; phone : 98673098 ; address : Meow Street 24 ; email : ilovewombatstoo@gmail.com ; product : kibble ; price : $98/bag`<br> <br> The above command adds a `Supplier` contact. Supplier's name is **_Petco_**, phone number is **_98673098_**, address is **_Meow Street 24_**, email is **_ilovewombatstoo@gmail.com_**, product is **_kibble_**, and price of product is **_$98/bag_**.      |
 | **Maintainer**   | Format : <br>`/add-maintainer ; name : [name] ; phone : [phone] ; address : [address] ; email : [email] ; skill : [skill] ; commission : [commission/hr]` <br> <br> Example: <br>`/add-maintainer ; name : Tom Tan  ; phone : 98765435 ; address : Poochie Street 24 ; email : ihelppooches@gmail.com ; skill : trainer ; commission : $60/hr` <br> <br> The above command adds a `Maintainer` contact. Maintainer's name is **_Tom Tan_**, phone number is **_98765435_**, address is **_Poochie Street 24_**, email is **_ihelppooches@gmail.com_**, skill is **_trainer_**, and commission is **_$60/hr_**. |
-
+[//]: # (@@author)
 <br> 
 
 <div style="text-align:center;">
@@ -605,6 +607,8 @@ Example: <br>
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author [jannaleong])
+
 #### Adding a note : `note`
 
 Adds a note to a specified person in your PoochPlanner so that you can keep track of any additional details regarding your contacts.
@@ -671,6 +675,8 @@ Add a note with a deadline:<br>
 </div>
 
 <div style="page-break-after: always;"></div>
+
+[//]: # (@@author)
 
 #### Undoing a command : `undo`
 
@@ -790,6 +796,7 @@ Below is an example of redoing an <code>add</code> command :
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author [jannaleong])
 
 #### Viewing help : `help`
 
@@ -874,6 +881,7 @@ Example: <br>
 
 </div>
 
+
 <div style="page-break-after: always;"></div>
 
 #### Clearing all contacts : `clear`
@@ -944,6 +952,8 @@ Example: <br>
 
 </div>
 
+[//]: # (@@author)
+
 <div style="page-break-after: always;"></div>
 
 ### Exiting the program : `exit`
@@ -968,6 +978,7 @@ Furthermore, certain manual edits that you make can cause your PoochPlanner to b
 
 <div style="page-break-after: always;"></div>
 
+[//]: # (@@author [jannaleong])
 ## Common Errors
 ### Unknown Command
 
@@ -1009,6 +1020,8 @@ If you encounter a missing field error, please ensure that the fields listed in 
     <br>
 </div>
 <div style="page-break-after: always;"></div>
+
+[//]: # (@@author)
 
 ## FAQ
 ### Launching PoochPlanner
